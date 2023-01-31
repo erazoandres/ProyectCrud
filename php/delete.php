@@ -1,9 +1,11 @@
 
 <?php
-    // include_once "../test/ProyectCrud/php/conection.php";
 
+    include_once "conection.php";
 
-    $sentencia = self::$conn->prepare("DELETE FROM users WHERE nombre = '$name'");
+    $user = $_GET["status"];
+    
+    $sentencia = $conn->prepare("DELETE FROM users WHERE nombre = '$user'");
     $sentencia->execute();
 
     if($sentencia->rowCount()==0){
@@ -11,5 +13,7 @@
     }else{
         echo "<br>"."[Se borro el registro]"."<br>"."Actualice...";
     }
+    
+    header('Location:../index.php')
     
 ?>

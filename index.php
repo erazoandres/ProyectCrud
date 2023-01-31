@@ -56,8 +56,8 @@
                       <td><?php echo $fila["nombre"] ?></td>
                       <td><?php echo $fila["email"] ?></td>
                       <td><?php echo $fila["pass"] ?></td>
-                      <td class="text-primary"><a href="../ProyectCrud/php/update.php?status=<?php echo $fila["nombre"] ?>">Editar</a></td>
-                      <td class="text-danger"> Eliminar</td>
+                      <td><a  class="text-primary" href="../ProyectCrud/php/update.php?status=<?php  echo $fila["nombre"] ?>">Editar</a></td>
+                      <td><a  class="text-danger"  href="../ProyectCrud/php/delete.php?status=<?php echo $fila["nombre"] ?>">Eliminar</a></td>
                     </tr>
 
                     <?php
@@ -124,4 +124,3 @@
       </div>
 
     </div>
-

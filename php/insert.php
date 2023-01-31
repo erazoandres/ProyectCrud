@@ -1,6 +1,5 @@
 
 <?php
-
     if(empty($_POST["name"]) || empty($_POST["email"]) || empty($_POST["pass"])){
         header('Location:../index.php?status=err');
         exit();
@@ -8,11 +7,9 @@
 
     include_once "../php/conection.php";
 
-    
     $name =  $_POST["name"];
     $email = $_POST["email"];
     $pass =  $_POST["pass"];
-    
     
     $sentencia = $conn->prepare("SELECT * FROM users WHERE nombre = '$name'");
     $sentencia->execute();
