@@ -1,40 +1,26 @@
 
 <?php
    include_once "../php/conection.php";
-
-   $inst = new conection();
-   $sentencia = $inst->get_conexion();
+   include_once "../php/header.php";
+   include_once "../php/footer.php";
+   
    $name = $_GET["status"];
-   $res = $sentencia->prepare("SELECT * FROM users WHERE nombre = '$name'");
-   $res->execute();
-   $data = $res->fetch(PDO::FETCH_OBJ);
+   $sentencia = $conn->prepare("SELECT * FROM users WHERE nombre = '$name'");
+   $sentencia->execute();
+   $data = $sentencia->fetch(PDO::FETCH_OBJ);
 
    $a = $data->nombre;
    $b = $data->email;
    $c = $data->pass;
 
+   $sentencia = $conn->prepare("UPDATE users nombre = '' ")
 
 ?>
 
-<!doctype html>
-<html lang="en">
-
-<html>
-
-  <head>
-
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-
-  </head>
-
-   <body>
 
    <div class ="container-fluid ">
 
-      <div class="col-md-4 mx-auto mt-4">
+      <div class="col-md-3 mx-auto mt-4">
                <div class="card">
 
                
@@ -43,7 +29,7 @@
                   
                   <!-- FORMULARIO -->
                   
-                  <form action="../ProyectCrud/php/insert.php" class="p-4" method="post">
+                  <form action="../php/updateProcess.php" class="p-4" method="post">
 
                   <div class="mb-3">
                      <label class="text-capitalize form-label" for="">name:</label>
@@ -58,7 +44,8 @@
                      <input class="form-control" type="number" name="pass" value="<?php echo $c ?>">
                   </div>
                   <div class=" text-center d-grid mt-3">
-                     <input  class="p-2 btn btn-outline-success" type="submit" value = "Registrar" >
+                     <input  class="p-2 btn btn-outline-success" type="submit" value = "Actualizar" >
+                     <input type="hidden" value = "<?php echo $name ?>" name="id">
                   </div>
 
                   </form>
@@ -71,5 +58,3 @@
             </div>
          </div>
       </div>
-   </body>
-</html>
