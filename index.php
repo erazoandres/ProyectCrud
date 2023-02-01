@@ -10,19 +10,13 @@
 
 ?>
 
+    <!-- SCRIPT ALERTA -->
+    <script>
+      var alertList = document.querySelectorAll(".alert");
+      alertList.forEach(function(alert){new bootstrap.Alert(alert)});
+    </script>
+
     <div class="container mt-4">
-
-      <!-- SCRIPT ALERTA -->
-      <div>
-        <script>
-          var alertList = document.querySelectorAll(".alert");
-          alertList.forEach(function(alert){
-            new bootstrap.Alert(alert)
-          });
-
-        </script>
-      </div>
-
       <div class="row">
           <!-- CONTAINER TABLE -->
           <div class="col-md-7">
@@ -127,7 +121,13 @@
                       <button style="overflow:hidden" type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
                       <strong>Eliminado!</strong> uno menos.
                 <?php
-                }
+                  }elseif (isset($_GET["status"]) and $_GET["status"] == "edit"){
+                ?>
+                      <div class="alert alert-info alert-dismissible fade show" role="alert">
+                      <button style="overflow:hidden" type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                      <strong>Editado!</strong> a por otro.
+                <?php
+                  }
                 ?>
               </div>
             </div>

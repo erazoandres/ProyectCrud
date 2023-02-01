@@ -10,7 +10,7 @@
 
     $sentencia = $conn->prepare("UPDATE users SET nombre = '$name', email = '$email',pass = '$pass' WHERE nombre = '$id'");
     $sentencia->execute();  
-    
-    header('Location:../index.php');
+
+   header('Location:../index.php?status=edit')
 
 ?>
