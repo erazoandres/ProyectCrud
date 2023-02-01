@@ -1,3 +1,4 @@
+
 <?php
   include_once "../ProyectCrud/php/conection.php";
   include_once "../ProyectCrud/php/header.php";
@@ -103,24 +104,33 @@
               <div>
                 <div class="card card-footer p-0">
                 <?php
-                
                   #TO FIX
-                  if(true /*$_GET["status"] == "err"*/){
+                  if( isset($_GET["status"]) and $_GET["status"] == "err"){
                 ?>
 
                     <div class="alert alert-danger alert-dismissible fade show" role="alert">
                     <button style="overflow:hidden" type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
                     <strong>Faltan datos!</strong> deberias llenarlos todos.
 
-              </div>
+            
+                <?php    
+                  }elseif(isset($_GET["status"]) and $_GET["status"] == "sucess"){
+                ?>
+                    <div class="alert alert-primary alert-dismissible fade show" role="alert">
+                    <button style="overflow:hidden" type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                    <strong>Agregado!</strong> uno mas!.
 
-              <?php    
-              }
-              ?>
-                </div>
+                <?php  
+                  }elseif(isset($_GET["status"]) and $_GET["status"] == "del"){
+                ?>
+                      <div class="alert alert-warning alert-dismissible fade show" role="alert">
+                      <button style="overflow:hidden" type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                      <strong>Eliminado!</strong> uno menos!.
+                <?php
+                }
+                ?>
               </div>
             </div>
           </div>
       </div>
-
     </div>

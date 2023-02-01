@@ -22,5 +22,5 @@
         echo "[nombre de usuario existente]"."<br>";
     }
 
-    header('Location:../index.php')
+    header('Location:../index.php?status=sucess')
 ?>
