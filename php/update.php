@@ -23,7 +23,7 @@
       <div class="col-md-3 mx-auto mt-4">
                <div class="card">
 
-               
+
 
                   <div class="card card-header bg-primary text-white user-select-none text-capitalize"> <strong>register form</strong></div>
                   

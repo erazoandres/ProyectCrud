@@ -18,9 +18,12 @@
     if(count($array_users) == 0){
         $sentencia2 = $conn->prepare("INSERT INTO users(nombre,email,pass) VALUES('$name', '$email' , '$pass')");
         $sentencia2->execute();
+        header('Location:../index.php?status=sucess');
+    }elseif(count($array_users)==1){
+        header('Location:../index.php?status=exist');
     }else{
-        echo "[nombre de usuario existente]"."<br>";
+        header('Location:../index.php?status=error');
     }
 
-    header('Location:../index.php?status=sucess')
+
 ?>

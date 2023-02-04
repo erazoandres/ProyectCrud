@@ -20,13 +20,13 @@
       <div class="row">
           <!-- CONTAINER TABLE -->
           <div class="col-md-7">
-            <div class="card" style="overflow:auto;height:65vh">
+            <div class="card bg-dark border-0" style="overflow:auto;height:65vh">
               <div class="card card-header bg-primary text-white text-capitalize" style="user-select: none;">
-                <strong>table of users data</strong>
+                <strong> users data</strong>
               </div>
 
-              <div class="p-1" style="overflow:auto;height:100vh;">
-                <table class="table table-bordered table-hover table-striped" style="user-select: none;border-collapse: collapse; width: 100%;">
+              <div class="p-1 overflow-auto ">
+                <table class="table table-bordered table-hover table-striped table-dark" style="user-select: none; border-collapse: collapse; width: 100%;">
                   <thead>
                     <tr>
                       <th>#</th>
@@ -67,27 +67,24 @@
 
           <!-- CONTAINER FORM -->
           <div class="col-md-4">
-            <div class="card">
-              
+            <div class="card">  
 
               <div class="card card-header bg-primary text-white user-select-none text-capitalize"> <strong>register form</strong></div>
               
               <!-- FORMULARIO -->
-
-              
-              <form action="../ProyectCrud/php/insert.php" class="p-3" method="post">
+              <form action="../ProyectCrud/php/insert.php" class="p-3 bg-dark text-white" method="post">
 
                 <div class="mb-1">
                   <label class="text-capitalize form-label" for="">name:</label>
-                  <input class="form-control" type="text" name="name">
+                  <input class="form-control bg-dark text-white" type="text" name="name">
                 </div>
                 <div class="mb-1">
                   <label class="text-capitalize form-label" for="">email:</label>
-                  <input class="form-control" type="text" name="email">
+                  <input class="form-control bg-dark text-white" type="text" name="email">
                 </div>
                 <div class="mb-1">
                   <label class="text-capitalize form-label" for="">pass:</label>
-                  <input class="form-control" type="number" name="pass">
+                  <input class="form-control bg-dark text-white" type="number" name="pass">
                 </div>
                 <div class=" text-center d-grid mt-2">
                   <input  class="p-2 btn btn-outline-success" type="submit" value = "Registrar" >
@@ -96,17 +93,15 @@
               </form>
 
               <div>
-                <div class="card card-footer p-0">
+                <div class="card card-footer p-0 bg-dark">
                 <?php
                   #TO FIX
                   if( isset($_GET["status"]) and $_GET["status"] == "err"){
                 ?>
-
                     <div class="alert alert-danger alert-dismissible fade show" role="alert">
                     <button style="overflow:hidden" type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
                     <strong>Faltan datos!</strong> revisa nuevo.
 
-            
                 <?php    
                   }elseif(isset($_GET["status"]) and $_GET["status"] == "sucess"){
                 ?>
@@ -121,11 +116,20 @@
                       <button style="overflow:hidden" type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
                       <strong>Eliminado!</strong> uno menos.
                 <?php
-                  }elseif (isset($_GET["status"]) and $_GET["status"] == "edit"){
+                  }elseif (isset($_GET["status"]) and $_GET["status"] == "edited"){
                 ?>
                       <div class="alert alert-info alert-dismissible fade show" role="alert">
                       <button style="overflow:hidden" type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
                       <strong>Editado!</strong> a por otro.
+                <?php
+                  }elseif(isset($_GET["status"]) and $_GET["status"] == "exist"){
+                ?>
+                    <div class="alert alert-info alert-dismissible fade show" role="alert">
+                      <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                    
+                      <strong>Nombre existente!</strong> prueba otro.
+                    </div>
+                   
                 <?php
                   }
                 ?>
