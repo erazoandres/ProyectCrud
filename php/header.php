@@ -26,18 +26,18 @@
 
                 <ul class="nav col-12 col-lg-auto d-flex justify-content-center me-lg-auto mb-lg-0">
                     <li><a class="nav-link px-2 text-secondary" href="../index.php">Home</a></li>
-                    <li><a class="nav-link px-2 text-white" href="php/viewPost.php">Post</a></li>
-                    <li><a class="nav-link px-2 text-white" href="">Enterprise</a></li>
+                    <li><a class="nav-link px-2 text-white" href="php/viewPost.php">Muro</a></li>
+                    <li><a class="nav-link px-2 text-white" href="php/insert_post.php">Crear Post</a></li>
                     <li><a class="nav-link px-2 text-white" href="">Us</a></li>
             
                 </ul>
 
-                <form class="form col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" action=""><input class="form-control bg-dark text-white" type="search" placeholder="Search..."></form>
-
+                <form class="form col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" action=""><input class="form-control bg-dark text-white" type="search" placeholder="Search writer..."></form>
+<!-- 
                 <div class="">
                     <button class="btn btn-outline-light me-2" > <a class="text-white" href="php/login.php">Log in</a> </button>
                     <button class="btn btn-warning"> <a class="text-black" href="">Sign up</a></button>
-                </div>
+                </div> -->
 
             </div>
         </div>
