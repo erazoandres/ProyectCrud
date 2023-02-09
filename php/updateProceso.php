@@ -1,6 +1,6 @@
 
 <?php
-    include_once '../php/conection.php';
+    include_once 'conection.php';
 
     $id = $_POST["id"];
     $name  = $_POST["name"];
@@ -12,9 +12,9 @@
 
 
     if($sentencia->rowCount()>0){
-        header("Location:../index.php?status=edited");
+        header("Location:users_admin.php?status=edited");
     }else{
-        header("Location:../index.php?status=editedError");
+        header("Location:users_admin.php?status=editedError");
     }
 
     

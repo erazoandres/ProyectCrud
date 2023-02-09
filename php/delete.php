@@ -14,6 +14,6 @@
         echo "<br>"."[Se borro el registro]"."<br>"."Actualice...";
     }
     
-    header('Location:../index.php?status=del')
+    header('Location:users_admin.php?status=del')
     
 ?>

@@ -25,10 +25,10 @@
                 </a>
 
                 <ul class="nav col-12 col-lg-auto d-flex justify-content-center me-lg-auto mb-lg-0">
-                    <li><a class="nav-link px-2 text-secondary" href="../index.php">Home</a></li>
-                    <li><a class="nav-link px-2 text-white" href="php/viewPost.php">Muro</a></li>
-                    <li><a class="nav-link px-2 text-white" href="php/insert_post.php">Crear Post</a></li>
-                    <li><a class="nav-link px-2 text-white" href="">Us</a></li>
+                    <li><a class="nav-link px-2 text-secondary" href="index.php">Home</a></li>
+                    <!-- <li><a class="nav-link px-2 text-white" href="#">Muro</a></li> -->
+                    <li><a class="nav-link px-2 text-white" href="insert_post.php">Crear Post</a></li>
+                    <li><a class="nav-link px-2 text-white" href="users_admin.php">Users</a></li>
             
                 </ul>
 

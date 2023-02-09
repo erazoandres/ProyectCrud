@@ -30,11 +30,11 @@
 
     </head>
 
-    <body class="bg-dark">
+    <body class="">
 
         <header class="container border-bottom d-flex">
             <div style="display:flex;align-items:center">
-                <a href="../index.php" style="font-size:1.5em;">
+                <a href="index.php" style="font-size:1.5em;">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-box-arrow-in-left" viewBox="0 0 16 16">
                         <path fill-rule="evenodd" d="M10 3.5a.5.5 0 0 0-.5-.5h-8a.5.5 0 0 0-.5.5v9a.5.5 0 0 0 .5.5h8a.5.5 0 0 0 .5-.5v-2a.5.5 0 0 1 1 0v2A1.5 1.5 0 0 1 9.5 14h-8A1.5 1.5 0 0 1 0 12.5v-9A1.5 1.5 0 0 1 1.5 2h8A1.5 1.5 0 0 1 11 3.5v2a.5.5 0 0 1-1 0v-2z"/>
                         <path fill-rule="evenodd" d="M4.146 8.354a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H14.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3z"/>
@@ -71,35 +71,39 @@
 
         <div class="container p-4 ">
             <div class="row">
-                <div class="col bg-primary p-0" style="height:250px">
+                <div class="col bg-dark p-0">
                     <form action="" class="mx-0 text-center">
 
                         <div>
-                            <h2 class="text-center my-auto lead"><input type="text" style="width:100%;font-size:1.5em;outline:none" class="text-center p-4" max="10" placeholder="Ingresa titulo"></h2>
+                            <h2 class="text-center my-auto lead"><input type="text" maxlength="40" style="width:100%;font-size:1.5em;outline:none" class="text-center p-4" max="10" placeholder="Ingresa titulo"></h2>
+                            
                         </div>
 
-                        <textarea class="p-4 lead" name="" id="" cols="30" rows="3000" placeholder="Escribe aqui tu contenido..." style="width:100%;height:100vh;margin:0; padding:0;outline:none"></textarea>
-                        <div class="d-grid"><button type="submit" class=" btn btn-outline-primary p-3 mt-2">Postear</button></div>
+                        <div style="height:100vh">
+                            <textarea class="p-4 lead" name="" id="" cols="30" rows="" placeholder="Escribe aqui tu contenido..." style="width:100%;height:100%;margin:0; padding:0;outline:none"></textarea>
+                        </div>
+
+                        <div class="d-grid"><button type="submit" class=" btn btn-outline-primary p-3">Postear</button></div>
                     </form>
                 </div>
-                <div class="col-4  d-none d-md-block " style="height:100vh">
-                    <div class="my-3" style="position:sticky;top:0; ">
+                <div class="col-4  d-none d-md-block " style="height:100vh ; position:sticky;top:0; ">
+                    <div class="my-3" >
                         <div class="card p-2">
                             <div class="card-header"><h5>Card title 1</h5></div>
                             <div class="card-body card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium, fuga?</div>
                             <div class="card-footer text-secondary">Lorem, ipsum.</div>
                         </div>
                     </div>
-                    <div class="my-3" style="position:sticky;top:0; ">
+                    <div class="my-3">
                         <div class="card p-2">
-                            <div class="card-header"><h5>Card title 1</h5></div>
+                            <div class="card-header"><h5>Card title 2</h5></div>
                             <div class="card-body card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium, fuga?</div>
                             <div class="card-footer text-secondary">Lorem, ipsum.</div>
                         </div>
                     </div>
-                    <div class="my-3" style="position:sticky;top:0; ">
+                    <div class="my-3">
                         <div class="card p-2">
-                            <div class="card-header"><h5>Card title 1</h5></div>
+                            <div class="card-header"><h5>Card title 3</h5></div>
                             <div class="card-body card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium, fuga?</div>
                             <div class="card-footer text-secondary">Lorem, ipsum.</div>
                         </div>

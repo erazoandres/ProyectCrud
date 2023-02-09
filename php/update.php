@@ -1,8 +1,8 @@
 
 <?php
-   include_once "../php/conection.php";
-   include_once "../php/header.php";
-   include_once "../php/footer.php";
+   include_once "conection.php";
+   include_once "header.php";
+   include_once "footer.php";
    
    $name = $_GET["status"];
    $sentencia = $conn->prepare("SELECT * FROM users WHERE nombre = '$name'");
@@ -27,7 +27,7 @@
                
                <!-- FORMULARIO -->
                
-               <form action="../php/updateProceso.php" class="p-4 bg-dark" method="post">
+               <form action="updateProceso.php" class="p-4 bg-dark" method="post">
 
                   <div class="mb-3">
                      <label class="text-capitalize form-label" for="">name:</label>

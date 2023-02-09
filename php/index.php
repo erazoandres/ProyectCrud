@@ -1,7 +1,7 @@
 <?php
-    include "../php/header.php";
-    include "../php/footer.php";
-    include "../php/conection.php";
+    include "header.php";
+    include "footer.php";
+    include "conection.php";
 
 
     
@@ -22,17 +22,17 @@
                 
 
 
-                <li><a class="nav-link text-decoration-underline" style="font-size:1.2em" href="">World</a></li>
-                <li><a class="nav-link text-decoration-underline" style="font-size:1.2em" href="">Technology</a></li>
-                <li><a class="nav-link text-decoration-underline" style="font-size:1.2em" href="">Design</a></li>
-                <li><a class="nav-link text-decoration-underline" style="font-size:1.2em" href="">Culture</a></li>
-                <li><a class="nav-link text-decoration-underline" style="font-size:1.2em" href="">Business</a></li>
-                <li><a class="nav-link text-decoration-underline" style="font-size:1.2em" href="">Politics</a></li>
-                <li><a class="nav-link text-decoration-underline" style="font-size:1.2em" href="">Opinion</a></li>
-                <li><a class="nav-link text-decoration-underline" style="font-size:1.2em" href="">Science</a></li>
-                <li><a class="nav-link text-decoration-underline" style="font-size:1.2em" href="">Health</a></li>
-                <li><a class="nav-link text-decoration-underline" style="font-size:1.2em" href="">Style</a></li>
-                <li><a class="nav-link text-decoration-underline" style="font-size:1.2em" href="">Travel</a></li>
+                <li><a class="nav-link text-decoration-underline text-white" style="font-size:1.2em" href="">World</a></li>
+                <li><a class="nav-link text-decoration-underline text-white" style="font-size:1.2em" href="">Technology</a></li>
+                <li><a class="nav-link text-decoration-underline text-white" style="font-size:1.2em" href="">Design</a></li>
+                <li><a class="nav-link text-decoration-underline text-white" style="font-size:1.2em" href="">Culture</a></li>
+                <li><a class="nav-link text-decoration-underline text-white" style="font-size:1.2em" href="">Business</a></li>
+                <li><a class="nav-link text-decoration-underline text-white" style="font-size:1.2em" href="">Politics</a></li>
+                <li><a class="nav-link text-decoration-underline text-white" style="font-size:1.2em" href="">Opinion</a></li>
+                <li><a class="nav-link text-decoration-underline text-white" style="font-size:1.2em" href="">Science</a></li>
+                <li><a class="nav-link text-decoration-underline text-white" style="font-size:1.2em" href="">Health</a></li>
+                <li><a class="nav-link text-decoration-underline text-white" style="font-size:1.2em" href="">Style</a></li>
+                <li><a class="nav-link text-decoration-underline text-white" style="font-size:1.2em" href="">Travel</a></li>
             </ul>
         </div>
 
@@ -117,4 +117,5 @@
             <?php } ?>
         </div>
     </div>
+    
 </main>
