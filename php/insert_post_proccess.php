@@ -3,7 +3,7 @@
     include_once "conection.php";
 
     $title = $_POST["title"];
-    $data = $_POST["data"];
+    $data = date('y-m-d' , strtotime($_POST["date"]));
     $content = $_POST["content"];
 
 
