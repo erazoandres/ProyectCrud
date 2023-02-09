@@ -81,7 +81,7 @@
               <div class="card card-header bg-primary text-white user-select-none text-capitalize"> <strong>register form</strong></div>
               
               <!-- FORMULARIO -->
-              <form action="../ProyectCrud/php/insert.php" class="p-3 bg-dark text-white" method="post">
+              <form action="insert.php" class="p-3 bg-dark text-white" method="post">
 
                 <div class="mb-1">
                   <label class="text-capitalize form-label" for="">name:</label>

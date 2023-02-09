@@ -72,15 +72,19 @@
         <div class="container p-4 ">
             <div class="row">
                 <div class="col bg-dark p-0">
-                    <form action="" class="mx-0 text-center">
+                    <form action="insert_post_proccess.php" class="mx-0 text-center" method="POST">
 
                         <div>
-                            <h2 class="text-center my-auto lead"><input type="text" maxlength="40" style="width:100%;font-size:1.5em;outline:none" class="text-center p-4" max="10" placeholder="Ingresa titulo"></h2>
+                            <h2 class="text-center my-auto lead"><input type="text" maxlength="40" name = "title" style="width:100%;font-size:1.5em;outline:none" class="text-center p-4" max="10" placeholder="Ingresa titulo"></h2>
                             
                         </div>
 
                         <div style="height:100vh">
-                            <textarea class="p-4 lead" name="" id="" cols="30" rows="" placeholder="Escribe aqui tu contenido..." style="width:100%;height:100%;margin:0; padding:0;outline:none"></textarea>
+                            <textarea class="p-4 lead" name="content" id="" cols="30" rows="" placeholder="Escribe aqui tu contenido..." style="width:100%;height:100%;margin:0; padding:0;outline:none"></textarea>
+                        </div>
+
+                        <div>
+                            <input type="date" name="date">
                         </div>
 
                         <div class="d-grid"><button type="submit" class=" btn btn-outline-primary p-3">Postear</button></div>
