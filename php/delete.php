@@ -9,9 +9,9 @@
     $sentencia->execute();
 
     if($sentencia->rowCount()==0){
-        echo "<br>"."[No se borro el registro]";
+        // echo "<br>"."[No se borro el registro]";
     }else{
-        echo "<br>"."[Se borro el registro]"."<br>"."Actualice...";
+        // echo "<br>"."[Se borro el registro]"."<br>"."Actualice...";
     }
     
     header('Location:users_admin.php?status=del')

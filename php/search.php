@@ -17,10 +17,12 @@
 ?>
 
 <div class="p-4 d-flex mt-3 row justify-content-center ">
+        <div class="p-4 mb-3">
+            <h2 style="font-family:Playfair Display, Georgia, Times New Roman, serif" class="text-light">Mira!, esto es lo que encontre:</h2>
+        </div>  
     <?php
         foreach($res as $fila){
     ?>
-
    
     <div class="col-md-3">
 
@@ -39,3 +41,4 @@
         }
     ?>
 </div>
+
