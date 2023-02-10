@@ -16,7 +16,7 @@
         
         <link rel="stylesheet" type="text/css" href="../icons/font/bootstrap-icons.css">
     </head>
-    <body>
+    <body class="bg-dark text-white">
 
     
    <div class ="container">
