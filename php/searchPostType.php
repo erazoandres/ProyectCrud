@@ -24,8 +24,9 @@
    
     <div class="col-md-6 ">
 
-            <h4 class="card card-header fst-italic"><?php echo $fila["title"] ?></h4>
-            <p class="border bg-secondary p-2 text-success"><strong><?php echo $fila["type"] ?></strong></p>
+            <h4 class="card card-header fst-italic bg-primary text-white"><?php echo $fila["title"] ?></h4>
+            <p class="p-4  mb-0 bg-secondary" style="line-clamp:2 ; -webkit-line-clamp:3 ; overflow:hidden ; display:-webkit-box;-webkit-box-orient:vertical"><?php echo $fila["content"] ?></p>
+            <p class="card card-footer  bg-secondary  text-white"><strong><?php echo $fila["type"] ?></strong></p>
     </div>
 
     <?php
