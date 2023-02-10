@@ -22,7 +22,7 @@
     ?>
 
    
-    <div class="col-md-3 ">
+    <div class="col-md-6 ">
 
             <h4 class="card card-header fst-italic"><?php echo $fila["title"] ?></h4>
             <p class="border bg-secondary p-2 text-success"><strong><?php echo $fila["type"] ?></strong></p>
