@@ -1,10 +1,12 @@
 <?php
+
+    session_start();
+
+
     include "header.php";
     include "footer.php";
     include "conection.php";
 
-
-    
     $sentencia = $conn->prepare("SELECT * FROM post");
     $sentencia->execute();
 
@@ -53,30 +55,31 @@
     <div class="container">
         <div class="">
             <div class="d-flex flex-wrap my-4">
-                <div class="col bg-secondary px-5 py-4 text-center mx-2 mb-2">
+
+                <div class="col bg-secondary px-5 py-2 text-center mx-2">
                     
+                    <a class="d-block pt-4 pb-2" href="" style="color:gold">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                            <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                        </svg>
+                    </a>
                     <h2 class="text-white pt-2 pb-md-3 pb-2"> <strong> Lorem, ipsum dolor.</strong></h2>
                     <p class="blockquote-footer">Lorem, ipsum.</p>
                     <div class="">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia, possimus. Doloremque suscipit sit a facere. Repellat tempore ut et ipsa, ducimus laudantium sapiente laboriosam cumque, perspiciatis ab illo explicabo provident?</div>
                     <a class="text-white" href="#" class="text-info">Lorem, ipsum dolor...</a>
-                    <a class="d-block pt-4" href="">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-box" viewBox="0 0 16 16">
-                            <path d="M8.186 1.113a.5.5 0 0 0-.372 0L1.846 3.5 8 5.961 14.154 3.5 8.186 1.113zM15 4.239l-6.5 2.6v7.922l6.5-2.6V4.24zM7.5 14.762V6.838L1 4.239v7.923l6.5 2.6zM7.443.184a1.5 1.5 0 0 1 1.114 0l7.129 2.852A.5.5 0 0 1 16 3.5v8.662a1 1 0 0 1-.629.928l-7.185 2.874a.5.5 0 0 1-.372 0L.63 13.09a1 1 0 0 1-.63-.928V3.5a.5.5 0 0 1 .314-.464L7.443.184z"/>
-                        </svg>
-                    </a>
                 </div>
 
-                <div class="col bg-secondary px-5 py-4 text-center mx-2 mb-2">
+                <div class="col bg-secondary px-5 py-2 text-center mx-2">
                     
+                    <a class="d-block pt-4 pb-2" href="" style="color:gold">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32"  fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                            <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                        </svg>
+                    </a>
                     <h2 class="text-white pt-2 pb-md-3 pb-2"> <strong> Lorem, ipsum dolor.</strong></h2>
                     <p class="blockquote-footer">Lorem, ipsum #2</p>
                     <div class="intro">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia, possimus. Doloremque suscipit sit a facere. Repellat tempore ut et ipsa, ducimus laudantium sapiente laboriosam cumque, perspiciatis ab illo explicabo provident?</div>
                     <a class="text-white" href="#" class="text-info">Lorem, ipsum dolor...</a>
-                    <a class="d-block pt-4" href="">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-broadcast-pin" viewBox="0 0 16 16">
-                        <path d="M3.05 3.05a7 7 0 0 0 0 9.9.5.5 0 0 1-.707.707 8 8 0 0 1 0-11.314.5.5 0 0 1 .707.707zm2.122 2.122a4 4 0 0 0 0 5.656.5.5 0 1 1-.708.708 5 5 0 0 1 0-7.072.5.5 0 0 1 .708.708zm5.656-.708a.5.5 0 0 1 .708 0 5 5 0 0 1 0 7.072.5.5 0 1 1-.708-.708 4 4 0 0 0 0-5.656.5.5 0 0 1 0-.708zm2.122-2.12a.5.5 0 0 1 .707 0 8 8 0 0 1 0 11.313.5.5 0 0 1-.707-.707 7 7 0 0 0 0-9.9.5.5 0 0 1 0-.707zM6 8a2 2 0 1 1 2.5 1.937V15.5a.5.5 0 0 1-1 0V9.937A2 2 0 0 1 6 8z"/>
-                    </svg>
-                    </a>
                 </div>
 
                 <!-- <div class="col-6 bg-secondary px-5 py-4  text-center mx-2 mb-2">
@@ -102,10 +105,11 @@
             <div class="col-md-6">
                 <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
                     <div class="col p-4 d-flex flex-column position-static">
-                    <strong class="d-inline-block mb-2 text-primary">World</strong>
+                    <strong class="d-inline-block mb-3 text-primary"><?php echo $fila['type'] ?></strong>
                     <h3 class="mb-0"><?php echo $fila["title"] ?></h3>
                     <div class="mb-1 text-muted"><?php echo $fila["date"] ?></div>
                     <p class="card-text mb-auto" style="line-clamp:2 ; -webkit-line-clamp:2 ; overflow:hidden ; display:-webkit-box;-webkit-box-orient:vertical" ><?php echo $fila["content"] ?></p>
+                    <blockquote class="blockquote-footer">by <?php echo $fila["writer"] ?></blockquote>
                     <a href="#" class="stretched-link">Continue reading</a>
                     </div>
                     <div class="col-auto d-none d-lg-block">

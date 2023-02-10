@@ -9,7 +9,7 @@
 
     $name =  $_POST["name"];
     $email = $_POST["email"];
-    $pass =  $_POST["pass"];
+    $pass =  $_POST["pass"];                                                                                                                                                                                            
     
     $sentencia = $conn->prepare("SELECT * FROM users WHERE nombre = '$name'");
     $sentencia->execute();

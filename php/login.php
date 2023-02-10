@@ -1,4 +1,8 @@
 
+<?php
+    session_start();
+?>
+
 <!doctype html>
 <html lang="en">
 
@@ -15,16 +19,22 @@
     <body>
 
     
-   <div class ="container-fluid ">
+   <div class ="container">
 
-        <div class="col-md-3 mx-auto mt-4">
-            <div class="card">
+        <div class="col-6 col-md-5 col-lg-4 mx-auto mt-4">
+
+            <div class="border-bottom p-4 mb-2">
+                <h2>Gracias!, te esperamos pronto</h2>
+            </div>
+
+
+            <div class="card mt-4">
 
                 <div class="card card-header bg-primary text-white user-select-none text-capitalize"> <strong>Log in</strong></div>
                 
                 <!-- FORMULARIO -->
                 
-                <form action="../php/loginProceso.php" class="p-4 bg-dark" method="post">
+                <form action="loginProceso.php" class="p-4 bg-dark" method="post">
 
                     <div class="mb-3">
                     <label class="text-capitalize form-label" for="">name:</label>

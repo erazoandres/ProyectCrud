@@ -20,12 +20,12 @@
       <div class="row ">
           <!-- CONTAINER TABLE -->
           <div class="col-md-6 overflow-auto" style="height:70vh">
-            <div class="bg-dark ">
+            <div class="bg-dark">
         
               
-              <div class="rounded ">
+              <div class="">
                 
-                <div class="bg-primary text-white p-2" style="user-select: none">
+                <div class=" card card-header bg-primary text-white p-2" style="user-select: none">
                   <strong> Users data</strong>
                 </div>
 
@@ -36,8 +36,7 @@
                       <th scope="col">Name</th>
                       <th>Email</th>
                       <th>Pass</th>
-                      <th></th>
-                      <th></th>
+            
                     </tr>
                   </thead>
                   <tbody>

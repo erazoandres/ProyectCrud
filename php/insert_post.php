@@ -1,6 +1,4 @@
 
-
-
 <!doctype html>
 <html lang="en">
 
@@ -83,9 +81,31 @@
                             <textarea class="p-4 lead" name="content" id="" cols="30" rows="" placeholder="Escribe aqui tu contenido..." style="width:100%;height:100%;margin:0; padding:0;outline:none"></textarea>
                         </div>
 
-                        <div>
-                            <input type="date" name="date">
-                        </div>
+                
+                            <div class="d-flex">
+
+                                <div>
+                                    <input type="date" name="date">
+                                </div>
+
+                                <select name="type" id="">
+                                    <option class="text-primary" value="World">World</option>
+                                    <option class="text-secondary" value="Design">Design</option>
+                                    <option class="text-data" value="Culture">Culture</option>
+                                    <option class="text-warning" value="Bussiness">Bussiness</option>
+                                    <option class="text-info" value="Politics">Politics</option>
+                                    <option class="text-danger" value="Opinion">Opinion</option>
+                                    <option class="text-success" value="Technology">Technology</option>
+                                    <option class="text-primary" value="Science">Science</option>
+                                    <option class="text-muted" value="Health">Health</option>
+                                    <option class="text-body" value="Style">Style</option>
+                                    <option class="text-light" value="Travel">Travel</option>
+                        
+                                </select>
+                            </div>
+
+                     
+
 
                         <div class="d-grid"><button type="submit" class=" btn btn-outline-primary p-3">Postear</button></div>
                     </form>

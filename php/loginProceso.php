@@ -1,5 +1,7 @@
 <?php
 
+    session_start();
+
     include "conection.php";
 
 
@@ -12,7 +14,8 @@
     $sentencia->execute();
 
     if($sentencia->rowCount()>0){
-        header("Location:../index.php?status=welcome");
+        $_SESSION["name"] = "$name";
+        header("Location:index.php?status=welcome");
     }else{
         echo "No estas registrado";
     }
