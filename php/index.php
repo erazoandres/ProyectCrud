@@ -40,11 +40,11 @@
 
     </div>
     
-    <div class="container ">
+    <div class="container ">    
         <div class="p-4 p-md-5 bg-secondary rounded">
     
             <div class="col-md-6 text-white px-0">
-                <h1 class="fst-italic display-5"><a href=""></a> Title of a longer featured blog post</h1>
+                <h1 class="fst-italic display-5" style="font-family:Playfair Display, Georgia, Times New Roman, serif"><a href=""></a> Title of a longer featured blog post</h1>
                 <p class="lead my-3">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit illo dicta mollitia ducimus, obcaecati ullam? dolor sit amet consectet</p>
                 <a class="lead fw-bold text-white mb-0" href="">Reading...</a>
             </div>
@@ -63,9 +63,9 @@
                         </svg>
                     </a>
                     <h2 class="text-white pt-2 pb-md-3 pb-2"> <strong> Lorem, ipsum dolor.</strong></h2>
-                    <p class="blockquote-footer">Lorem, ipsum.</p>
-                    <div class="">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia, possimus. Doloremque suscipit sit a facere. Repellat tempore ut et ipsa, ducimus laudantium sapiente laboriosam cumque, perspiciatis ab illo explicabo provident?</div>
-                    <a class="text-white" href="#" class="text-info">Lorem, ipsum dolor...</a>
+                    <!-- <p class="blockquote-footer">Lorem, ipsum.</p> -->
+                    <div class="lead">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia, possimus. Doloremque suscipit sit a facere. Repellat tempore ut et ipsa, ducimus laudantium sapiente laboriosam cumque, perspiciatis ab illo explicabo provident?</div>
+                    <a class="text-white p-2 mt-4 d-block" href="#">Lorem, ipsum dolor...</a>
                 </div>
 
                 <div class="col bg-secondary p-5 text-center mx-3">
@@ -76,9 +76,9 @@
                         </svg>
                     </a>
                     <h2 class="text-white pt-2 pb-md-3 pb-2"> <strong> Lorem, ipsum dolor.</strong></h2>
-                    <p class="blockquote-footer">Lorem, ipsum #2</p>
-                    <div class="intro">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia, possimus. Doloremque suscipit sit a facere. Repellat tempore ut et ipsa, ducimus laudantium sapiente laboriosam cumque, perspiciatis ab illo explicabo provident?</div>
-                    <a class="text-white" href="#" class="text-info">Lorem, ipsum dolor...</a>
+                    <!-- <p class="blockquote-footer">Lorem, ipsum #2</p> -->
+                    <div class="lead">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia, possimus. Doloremque suscipit sit a facere. Repellat tempore ut et ipsa, ducimus laudantium sapiente laboriosam cumque, perspiciatis ab illo explicabo provident?</div>
+                    <a class="text-white d-block p-2 mt-4" href="#">Lorem, ipsum dolor...</a>
                 </div>
 
                 <!-- <div class="col-6 bg-secondary px-5 py-4  text-center mx-2 mb-2">
@@ -105,9 +105,9 @@
                 <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
                     <div class="col p-4 d-flex flex-column position-static">
                         <strong class="d-inline-block mb-3 text-success"><?php echo $fila['type'] ?></strong>
-                        <h3 style="color:white" class="mb-0"><?php echo $fila["title"] ?></h3>
+                        <h2 style="color:white;font-family:Playfair Display, Georgia, Times New Roman, serif" class="mb-0"><?php echo $fila["title"] ?></h2>
                         <div class="mb-1 text-muted"><?php echo $fila["date"] ?></div>
-                            <p class="card-text mb-auto lead text-white" style="line-clamp:2 ; -webkit-line-clamp:2 ; overflow:hidden ; display:-webkit-box;-webkit-box-orient:vertical" ><?php echo $fila["content"] ?></p>
+                            <p class="lead card-text mb-auto lead text-white" style="line-clamp:2 ; -webkit-line-clamp:2 ; overflow:hidden ; display:-webkit-box;-webkit-box-orient:vertical;font-family:system-ui, -apple-system, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, Liberation Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji", Segoe UI Symbol, Noto Color Emoji" ><?php echo $fila["content"] ?></p>
                             <!-- <blockquote class="blockquote-footer">by <?php echo $fila["writer"] ?></blockquote> -->
                         <a href="#" class="stretched-link">Continue reading...</a>
                         </div>

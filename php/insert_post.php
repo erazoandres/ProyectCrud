@@ -33,7 +33,7 @@
 
     </head>
 
-    <body class="">
+    <body class="bg-dark">
 
         <header class="container border-bottom d-flex">
             <div style="display:flex;align-items:center">
@@ -45,7 +45,7 @@
                 </a>
             </div>
             <div class="col-md-10 text-center p-4 mx-auto my-2 text-white ">
-                <h1 class="mb-1">Title to create post</h1>
+                <h1 class="mb-1" style="font-family:Playfair Display, Georgia, Times New Roman, serif">Title to create post</h1>
                 <blockquote class="text-muted blockquote-footer d-inline-block">a short description</blockquote>
                 <div class="d-flex justify-content-center">
     
@@ -78,22 +78,22 @@
                     <form action="insert_post_proccess.php" class="mx-0 text-center" method="POST">
 
                         <div>
-                            <h2 class="text-center my-auto lead"><input type="text" maxlength="40" name = "title" style="width:100%;font-size:1.5em;outline:none" class="text-center p-4" max="10" placeholder="Ingresa titulo"></h2>
+                            <h2 class="text-center my-auto lead"><input type="text" maxlength="40" name = "title" style="width:100%;font-size:1.5em;outline:none" class="text-center p-4 bg-dark text-white" max="10" placeholder="Ingresa titulo"></h2>
                             
                         </div>
 
                         <div style="height:100vh">
-                            <textarea class="p-4 lead" name="content" id="" cols="30" rows="" placeholder="Escribe aqui tu contenido..." style="width:100%;height:100%;margin:0; padding:0;outline:none"></textarea>
+                            <textarea class="p-4 lead bg-dark text-white" name="content" id="" cols="30" rows="" placeholder="Escribe aqui tu contenido..." style="width:100%;height:100%;margin:0; padding:0;outline:none"></textarea>
                         </div>
 
                 
-                            <div class="d-flex">
+                            <div class="d-flex border-0">
 <!-- 
                                 <div class="form-control">
                                     <input type="date" name="date">
                                 </div> -->
 
-                                <select class="form-control" name="type" id="">
+                                <select class="p-2  bg-dark text-white" name="type" id="">
                                     <option class="text-primary" value="World">World</option>
                                     <option class="text-secondary" value="Design">Design</option>
                                     <option class="text-data" value="Culture">Culture</option>
