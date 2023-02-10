@@ -7,7 +7,7 @@
     include "footer.php";
     include "conection.php";
 
-    $sentencia = $conn->prepare("SELECT * FROM post");
+    $sentencia = $conn->prepare("SELECT * FROM post ORDER BY date DESC");
     $sentencia->execute();
 
     $resultado = $sentencia->fetchAll();
