@@ -24,7 +24,7 @@
                     <i class="bi bi-bootstrap"></i>
                 </a>
 
-                <ul class="nav col-12 col-lg-auto d-flex justify-content-center me-lg-auto mb-lg-0">
+                <ul class="nav col-12 col-lg-auto d-flex justify-content-center me-lg-auto mb-lg-0" style="font-size:1.2em">
                     <li><a class="nav-link px-2 text-secondary" href="index.php">Home</a></li>
                     <!-- <li><a class="nav-link px-2 text-white" href="#">Muro</a></li> -->
                     <li><a class="nav-link px-2 text-white" href="insert_post.php">Crear Post</a></li>
@@ -32,7 +32,7 @@
             
                 </ul>
 
-                <form class="form col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" action=""><input class="form-control bg-dark text-white" type="search" placeholder="Search writer..."></form>
+                <form class="form col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" action="search.php" method="post"><input class="form-control bg-dark text-white" type="search" name="userPostSearch" placeholder="Search writer..."></form>
     
                 <a href="login.php" class="text-danger">
                     <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-x-square" viewBox="0 0 16 16">

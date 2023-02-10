@@ -43,7 +43,7 @@
                   </div>
                   <div class="mb-3">
                      <label class="text-capitalize form-label" for="">active:</label>
-                     <select class="form-control" name="active" id=""><option value="1">Actived</option><option value="0">Disabled</option></select>
+                     <select class="form-control" name="active" id=""><option value="1">Active</option><option value="0">Disable</option></select>
                      <!-- <input class="form-control bg-dark text-white" type="number" name="pass" value="<?php echo $c ?>"> -->
                   </div>
                   <div class=" text-center d-grid mt-3">

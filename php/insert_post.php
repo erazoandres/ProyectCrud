@@ -1,6 +1,6 @@
 
 <?php
-    
+
 ?>
 
 
@@ -89,11 +89,11 @@
                 
                             <div class="d-flex">
 
-                                <div>
+                                <div class="form-control">
                                     <input type="date" name="date">
                                 </div>
 
-                                <select name="type" id="">
+                                <select class="form-control" name="type" id="">
                                     <option class="text-primary" value="World">World</option>
                                     <option class="text-secondary" value="Design">Design</option>
                                     <option class="text-data" value="Culture">Culture</option>
