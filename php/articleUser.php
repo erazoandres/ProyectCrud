@@ -55,9 +55,9 @@
     </div> 
 
     <div class="col-4">
-        <div class="card">
+        <div class="p-4 text-white" style="position:sticky ; top:0">
             <h3 class="card card-header">About something</h3>
-            <p class="card card-body">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestias doloremque tenetur quaerat animi magni aspernatur, libero nesciunt ab corporis consectetur?</p>
+            <p class="card card-body text-black">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestias doloremque tenetur quaerat animi magni aspernatur, libero nesciunt ab corporis consectetur?</p>
         </div>
     </div>
 
