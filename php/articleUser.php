@@ -1,14 +1,14 @@
-
 <?php
     include_once "conection.php";
     include_once "header.php";
 
-    $title = $_GET["title"];
+    $title  = $_GET["title"];
 
     $sentencia = $conn->prepare("SELECT * FROM post WHERE title = '$title'");
     $sentencia->execute();
 
     $res = $sentencia->fetch(PDO::FETCH_OBJ);
+
 
     echo $res->writer;
 ?>
