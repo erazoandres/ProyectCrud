@@ -13,8 +13,11 @@
     $sentencia = $conn->prepare("SELECT * FROM users WHERE nombre = '$name' AND email = '$email' AND pass = '$pass'");
     $sentencia->execute();
 
+    $res = $sentencia->fetchAll();
+
     if($sentencia->rowCount()>0){
         $_SESSION["name"] = "$name";
+        $_SESSION["active"] = $res["active"];
         header("Location:index.php?status=welcome");
     }else{
         echo "No estas registrado";

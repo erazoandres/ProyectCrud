@@ -1,13 +1,16 @@
 
 <?php
+    session_start();
     include_once 'conection.php';
 
     $id = $_POST["id"];
     $name  = $_POST["name"];
     $email = $_POST["email"];
     $pass  = $_POST["pass"];
+    $active = $_POST["active"];
+    
 
-    $sentencia = $conn->prepare("UPDATE users SET nombre = '$name', email = '$email',pass = '$pass' WHERE nombre = '$id'");
+    $sentencia = $conn->prepare("UPDATE users SET nombre = '$name', email = '$email',pass = '$pass', active = '$active' WHERE nombre = '$id'");
     $sentencia->execute();  
 
 
