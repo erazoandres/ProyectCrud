@@ -88,10 +88,10 @@
 
                 
                             <div class="d-flex">
-
+<!-- 
                                 <div class="form-control">
                                     <input type="date" name="date">
-                                </div>
+                                </div> -->
 
                                 <select class="form-control" name="type" id="">
                                     <option class="text-primary" value="World">World</option>

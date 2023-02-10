@@ -25,16 +25,16 @@
 
 
                 <li><a class="nav-link text-decoration-underline text-white" style="font-size:1.2em" href="searchPostType.php?type=World">World</a></li>
-                <li><a class="nav-link text-decoration-underline text-white" style="font-size:1.2em" href="">Technology</a></li>
-                <li><a class="nav-link text-decoration-underline text-white" style="font-size:1.2em" href="">Design</a></li>
-                <li><a class="nav-link text-decoration-underline text-white" style="font-size:1.2em" href="">Culture</a></li>
-                <li><a class="nav-link text-decoration-underline text-white" style="font-size:1.2em" href="">Business</a></li>
-                <li><a class="nav-link text-decoration-underline text-white" style="font-size:1.2em" href="">Politics</a></li>
-                <li><a class="nav-link text-decoration-underline text-white" style="font-size:1.2em" href="">Opinion</a></li>
-                <li><a class="nav-link text-decoration-underline text-white" style="font-size:1.2em" href="">Science</a></li>
-                <li><a class="nav-link text-decoration-underline text-white" style="font-size:1.2em" href="">Health</a></li>
-                <li><a class="nav-link text-decoration-underline text-white" style="font-size:1.2em" href="">Style</a></li>
-                <li><a class="nav-link text-decoration-underline text-white" style="font-size:1.2em" href="">Travel</a></li>
+                <li><a class="nav-link text-decoration-underline text-white" style="font-size:1.2em" href="searchPostType.php?type=Technology">Technology</a></li>
+                <li><a class="nav-link text-decoration-underline text-white" style="font-size:1.2em" href="searchPostType.php?type=Design">Design</a></li>
+                <li><a class="nav-link text-decoration-underline text-white" style="font-size:1.2em" href="searchPostType.php?type=Culture">Culture</a></li>
+                <li><a class="nav-link text-decoration-underline text-white" style="font-size:1.2em" href="searchPostType.php?type=Business">Business</a></li>
+                <li><a class="nav-link text-decoration-underline text-white" style="font-size:1.2em" href="searchPostType.php?type=Politics">Politics</a></li>
+                <li><a class="nav-link text-decoration-underline text-white" style="font-size:1.2em" href="searchPostType.php?type=Opinion">Opinion</a></li>
+                <li><a class="nav-link text-decoration-underline text-white" style="font-size:1.2em" href="searchPostType.php?type=Science">Science</a></li>
+                <li><a class="nav-link text-decoration-underline text-white" style="font-size:1.2em" href="searchPostType.php?type=Health">Health</a></li>
+                <li><a class="nav-link text-decoration-underline text-white" style="font-size:1.2em" href="searchPostType.php?type=Style">Style</a></li>
+                <li><a class="nav-link text-decoration-underline text-white" style="font-size:1.2em" href="searchPostType.php?type=Travel">Travel</a></li>
             </ul>
         </div>
 
@@ -107,8 +107,8 @@
                         <strong class="d-inline-block mb-3 text-primary"><?php echo $fila['type'] ?></strong>
                         <h3 style="line-clamp:2 ; -webkit-line-clamp:2 ; overflow:hidden ; display:-webkit-box;-webkit-box-orient:initial" class="mb-0"><?php echo $fila["title"] ?></h3>
                         <div class="mb-1 text-muted"><?php echo $fila["date"] ?></div>
-                            <p class="card-text mb-auto" style="line-clamp:2 ; -webkit-line-clamp:2 ; overflow:hidden ; display:-webkit-box;-webkit-box-orient:vertical" ><?php echo $fila["content"] ?></p>
-                            <blockquote class="blockquote-footer">by <?php echo $fila["writer"] ?></blockquote>
+                            <p class="card-text mb-auto lead" style="line-clamp:2 ; -webkit-line-clamp:2 ; overflow:hidden ; display:-webkit-box;-webkit-box-orient:vertical" ><?php echo $fila["content"] ?></p>
+                            <!-- <blockquote class="blockquote-footer">by <?php echo $fila["writer"] ?></blockquote> -->
                         <a href="#" class="stretched-link">Continue reading</a>
                         </div>
                     <div class="col-auto d-none d-lg-block">
