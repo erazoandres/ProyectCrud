@@ -64,7 +64,7 @@
                     </a>
                     <h2 class="text-white pt-2 pb-md-3 pb-2"> <strong> Lorem, ipsum dolor.</strong></h2>
                     <!-- <p class="blockquote-footer">Lorem, ipsum.</p> -->
-                    <div class="lead">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia, possimus. Doloremque suscipit sit a facere. Repellat tempore ut et ipsa, ducimus laudantium sapiente laboriosam cumque, perspiciatis ab illo explicabo provident?</div>
+                    <div class="lead d-none d-md-block">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia, possimus. Doloremque suscipit sit a facere. Repellat tempore ut et ipsa, ducimus laudantium sapiente laboriosam cumque, perspiciatis ab illo explicabo provident?</div>
                     <a class="text-white p-2 mt-4 d-block" href="#">Lorem, ipsum dolor...</a>
                 </div>
 
@@ -77,7 +77,7 @@
                     </a>
                     <h2 class="text-white pt-2 pb-md-3 pb-2"> <strong> Lorem, ipsum dolor.</strong></h2>
                     <!-- <p class="blockquote-footer">Lorem, ipsum #2</p> -->
-                    <div class="lead">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia, possimus. Doloremque suscipit sit a facere. Repellat tempore ut et ipsa, ducimus laudantium sapiente laboriosam cumque, perspiciatis ab illo explicabo provident?</div>
+                    <div class="lead d-md-block">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia, possimus. Doloremque suscipit sit a facere. Repellat tempore ut et ipsa, ducimus laudantium sapiente laboriosam cumque, perspiciatis ab illo explicabo provident?</div>
                     <a class="text-white d-block p-2 mt-4" href="#">Lorem, ipsum dolor...</a>
                 </div>
 
@@ -118,7 +118,7 @@
 
                 </div>
             </div>
-        </div>
+        </div>  
         <?php } ?>
   
         </div>

@@ -55,9 +55,12 @@
     </div> 
 
     <div class="col-4">
-        <div class=" p-4" style = "position:sticky;top:0" >
-            <h3 class="card card-header bg-dark text-white">About something</h3>
-            <p class="card card-body">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestias doloremque tenetur quaerat animi magni aspernatur, libero nesciunt ab corporis consectetur?</p>
+        <div class=" p-4" style = "position:sticky;top:0;"  >
+
+            <div style="">
+                <h3 class="card card-header bg-dark text-white border">About something</h3>
+                <p class="card card-body mb-0" style="border-top-left-radius:0;border-top-right-radius:0">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestias doloremque tenetur quaerat animi magni aspernatur, libero nesciunt ab corporis consectetur?</p>
+            </div>
         </div>
     </div>
 
