@@ -5,9 +5,9 @@
 
     
 
-    $name = $_POST["userPostSearch"];
+    $name = $_GET["type"];
 
-    $sentencia = $conn->prepare("SELECT * FROM post WHERE writer ='$name'");
+    $sentencia = $conn->prepare("SELECT * FROM post WHERE type ='$name'");
     $sentencia->execute();
 
     $res = $sentencia->fetchAll();

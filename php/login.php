@@ -46,7 +46,7 @@
                     </div>
                     <div class="mb-3">
                     <label class="text-capitalize form-label" for="">pass:</label>
-                    <input class="form-control bg-dark text-white" type="number" name="pass" value="">
+                    <input class="form-control bg-dark text-white" type="password" name="pass" value="">
                     </div>
                     <div class=" text-center d-grid mt-3">
                     <input  class="p-2 btn btn-outline-success" type="submit" value = "Log in" >

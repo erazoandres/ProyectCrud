@@ -80,7 +80,7 @@
           </div>
 
           <!-- CONTAINER FORM -->
-          <div class="col" style="height:70vh">  
+          <div class="col-auto mx-auto" style="height:70vh">  
             <div class="card">  
 
               <div class="card card-header bg-primary text-white user-select-none text-capitalize"> <strong>register form</strong></div>
@@ -98,7 +98,7 @@
                 </div>
                 <div class="mb-1">
                   <label class="text-capitalize form-label" for="">pass:</label>
-                  <input class="form-control bg-dark text-white" type="number" name="pass">
+                  <input class="form-control bg-dark text-white mt-md-2" type="password" name="pass">
                 </div>
                 <div class=" text-center d-grid mt-2">
                   <input  class="p-2 btn btn-outline-success" type="submit" value = "Registrar" >

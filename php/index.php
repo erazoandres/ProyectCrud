@@ -24,7 +24,7 @@
                 
 
 
-                <li><a class="nav-link text-decoration-underline text-white" style="font-size:1.2em" href="">World</a></li>
+                <li><a class="nav-link text-decoration-underline text-white" style="font-size:1.2em" href="searchPostType.php?type=World">World</a></li>
                 <li><a class="nav-link text-decoration-underline text-white" style="font-size:1.2em" href="">Technology</a></li>
                 <li><a class="nav-link text-decoration-underline text-white" style="font-size:1.2em" href="">Design</a></li>
                 <li><a class="nav-link text-decoration-underline text-white" style="font-size:1.2em" href="">Culture</a></li>
