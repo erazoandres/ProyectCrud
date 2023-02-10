@@ -101,23 +101,26 @@
     <div class="container">
         <div class="row mb-2">
             <?php foreach($resultado as $fila){ ?>
-            <div class="col-md-6">
-                <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
-                    <div class="col p-4 d-flex flex-column position-static">
+            
+                
+                <div class="col-md-6">
+                    <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                        <div class="col p-4 d-flex flex-column position-static">
                         <strong class="d-inline-block mb-3 text-success"><?php echo $fila['type'] ?></strong>
                         <h2 style="color:white;font-family:Playfair Display, Georgia, Times New Roman, serif" class="mb-0"><?php echo $fila["title"] ?></h2>
                         <div class="mb-1 text-muted"><?php echo $fila["date"] ?></div>
                             <p class="lead card-text mb-auto lead text-white" style="line-clamp:2 ; -webkit-line-clamp:2 ; overflow:hidden ; display:-webkit-box;-webkit-box-orient:vertical;font-family:system-ui, -apple-system, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, Liberation Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji", Segoe UI Symbol, Noto Color Emoji" ><?php echo $fila["content"] ?></p>
                             <!-- <blockquote class="blockquote-footer">by <?php echo $fila["writer"] ?></blockquote> -->
-                        <a href="#" class="stretched-link">Continue reading...</a>
+                        <a href="articleUser.php?title=<?php  echo $fila["title"]?>" class="stretched-link">Continue reading...</a>
                         </div>
                     <div class="col-auto d-none d-lg-block">
                     <svg class="bd-placeholder-img" width="200" height="250" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c" style="--darkreader-inline-fill: #404447;" data-darkreader-inline-fill=""></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em" style="--darkreader-inline-fill: #d2cfcb;" data-darkreader-inline-fill="">Thumbnail</text></svg>
 
-                    </div>
                 </div>
-                </div>
-            <?php } ?>
+            </div>
+        </div>
+        <?php } ?>
+  
         </div>
     </div>
     
