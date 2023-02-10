@@ -18,7 +18,7 @@
 ?>
 
 
-   <div class ="container-fluid ">
+   <div class ="container-fluid " style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif">
 
       <div class="col-md-3 mx-auto mt-4">
             <div class="card">

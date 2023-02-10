@@ -16,7 +16,7 @@
 
   </head>
   <body class="bg-dark">  
-  <header class="p-2 bg-dark text-white ">
+  <header class="p-2 bg-dark text-white border-bottom" style="border-bottom:1px solid lightblue">
         <div class="container ">
             <div class="d-flex flex-wrap justify-content-center justify-content-lg-start align-items-center  ">
 

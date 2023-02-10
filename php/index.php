@@ -16,7 +16,7 @@
     ?>
 
 
-<main class="py-3">
+<main class="py-3" >
 
     <div class="container mt-2">
         <div class=" col-12 bg-secondary">
@@ -28,7 +28,7 @@
                 <li><a class="nav-link text-decoration-underline text-white" style="font-size:1.2em" href="searchPostType.php?type=Technology">Technology</a></li>
                 <li><a class="nav-link text-decoration-underline text-white" style="font-size:1.2em" href="searchPostType.php?type=Design">Design</a></li>
                 <li><a class="nav-link text-decoration-underline text-white" style="font-size:1.2em" href="searchPostType.php?type=Culture">Culture</a></li>
-                <li><a class="nav-link text-decoration-underline text-white" style="font-size:1.2em" href="searchPostType.php?type=Business">Business</a></li>
+                <li><a class="nav-link text-decoration-underline text-white" style="font-size:1.2em" href="searchPostType.php?type=Bussiness">Business</a></li>
                 <li><a class="nav-link text-decoration-underline text-white" style="font-size:1.2em" href="searchPostType.php?type=Politics">Politics</a></li>
                 <li><a class="nav-link text-decoration-underline text-white" style="font-size:1.2em" href="searchPostType.php?type=Opinion">Opinion</a></li>
                 <li><a class="nav-link text-decoration-underline text-white" style="font-size:1.2em" href="searchPostType.php?type=Science">Science</a></li>
@@ -125,3 +125,5 @@
     </div>
     
 </main>
+
+

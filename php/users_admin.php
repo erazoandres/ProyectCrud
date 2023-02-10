@@ -16,7 +16,7 @@
       alertList.forEach(function(alert){new bootstrap.Alert(alert)});
     </script>
 
-    <div class="container mt-4 bg-dark">
+    <div class="container mt-4 bg-dark" style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif">
       <div class="row ">
           <!-- CONTAINER TABLE -->
           <div class="col-md-6 overflow-auto" style="height:70vh">
@@ -26,7 +26,7 @@
               <div class="">
                 
                 <div class=" card card-header bg-primary text-white p-2" style="user-select: none">
-                  <strong> Users data</strong>
+                  <strong> USERS TABLE</strong>
                 </div>
 
                 <table class="table table-bordered table-hover table-striped table-dark" style="user-select: none;">
@@ -83,10 +83,11 @@
           <div class="col-auto mx-auto" style="height:70vh">  
             <div class="card">  
 
-              <div class="card card-header bg-primary text-white user-select-none text-capitalize"> <strong>register form</strong></div>
+              <div class="card card-header bg-primary text-white user-select-none text-capitalize p-2"> <strong>REGISTER USER</strong></div>
               
               <!-- FORMULARIO -->
               <form action="insert.php" class="p-3 bg-dark text-white" method="post">
+
 
                 <div class="mb-1">
                   <label class="text-capitalize form-label" for="">name:</label>
