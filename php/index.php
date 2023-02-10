@@ -7,7 +7,7 @@
     include "footer.php";
     include "conection.php";
 
-    $sentencia = $conn->prepare("SELECT * FROM post ORDER BY date DESC");
+    $sentencia = $conn->prepare("SELECT * FROM post ORDER BY id DESC");
     $sentencia->execute();
 
     $resultado = $sentencia->fetchAll();
@@ -125,5 +125,4 @@
     </div>
     
 </main>
-
 
