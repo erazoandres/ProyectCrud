@@ -1,9 +1,4 @@
 
-<?php
-
-?>
-
-
 <!doctype html>
 <html lang="en">
 
@@ -75,7 +70,7 @@
         <div class="container p-4 ">
             <div class="row">
                 <div class="col bg-dark p-0">
-                    <form action="insert_post_proccess.php" class="mx-0 text-center" method="POST">
+                    <form action="insert_post_proccess.php" class="mx-0 text-center" method="POST" enctype="multipart/form-data">
 
                         <div>
                             <h2 class="text-center my-auto lead "><input type="text" maxlength="40" name = "title" style="width:100%;font-size:1.5em;outline:none" class="text-center p-4 bg-dark text-white" max="10" placeholder="Ingresa titulo"></h2>
@@ -107,12 +102,15 @@
                                     <option class="text-light" value="Travel">Travel</option>
                         
                                 </select>
+
+                               
+                                <input type="file" name="image"/>
+
+
                             </div>
 
                      
-
-
-                        <div class="d-grid"><button type="submit" class=" btn btn-outline-primary p-3">Postear</button></div>
+                        <div class="d-grid"><button type="submit" value="UPLOAD" class=" btn btn-outline-primary p-3">Postear</button></div>
                     </form>
                 </div>
                 <div class="col-4  d-none d-md-block " style="height:100vh ; position:sticky;top:0; ">

@@ -23,7 +23,7 @@
       <div class="col-md-3 mx-auto mt-4">
             <div class="card">
 
-               <div class="card card-header bg-primary text-white user-select-none text-capitalize"> <strong>register form</strong></div>
+               <div class="card card-header bg-primary text-white user-select-none text-capitalize"> <strong>UPDATE USERS DATA</strong></div>
                
                <!-- FORMULARIO -->
                
@@ -39,7 +39,7 @@
                   </div>
                   <div class="mb-3">
                      <label class="text-capitalize form-label" for="">pass:</label>
-                     <input class="form-control bg-dark text-white" type="number" name="pass" value="<?php echo $c ?>">
+                     <input class="form-control bg-dark text-white" type="password" name="pass" value="<?php echo $c ?>">
                   </div>
                   <div class="mb-3">
                      <label class="text-capitalize form-label" for="">active:</label>

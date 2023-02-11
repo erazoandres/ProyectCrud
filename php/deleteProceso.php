@@ -8,9 +8,9 @@
     $sentencia->execute();
 
     if($sentencia->rowCount()>0){
-        header('Location:index.php?status=Postdeleted');
+        header('Location:users_admin.php?status=Postdeleted');
     }else{
-        header('Location:index.php?status=notFound');
+        header('Location:users_admin.php?status=notFound');
     }
         
 ?>

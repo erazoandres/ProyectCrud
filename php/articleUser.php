@@ -49,8 +49,8 @@
                 </div>
 
                 <h1 class="display-1 mb-0" style="font-family:Playfair Display, Georgia, Times New Roman, serif"><?php echo $title?></h1>
-                <p class="text-muted"><?php echo $res->date ?> by <span style="text-decoration:underline;"><?php echo $res->writer ?></span></p>
-                <p class="lead pt-4"><?php echo $res->content ?> </p>
+                <p class="text-muted "><?php echo $res->date ?> by <span style="text-decoration:underline;"><?php echo $res->writer ?></span></p>
+                <p class="lead pt-4 text-justify"><?php echo $res->content ?> </p>
             
 
             </div>
