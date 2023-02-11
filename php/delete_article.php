@@ -4,8 +4,8 @@
    include_once "header.php";
    include_once "footer.php";
    
-//    $name = $_GET["status"];
-   $sentencia = $conn->prepare("SELECT * FROM post WHERE writer = 'conor'");
+   $name = $_GET["status"];
+   $sentencia = $conn->prepare("SELECT * FROM post WHERE writer = '$name'");
    $sentencia->execute();
    $data = $sentencia->fetchAll();
 
@@ -25,7 +25,7 @@
 
                   <div class="mb-3">
                      <label class="text-capitalize form-label" for="">¿Cual quieres eliminar?:</label>
-                     <select class="d-block" id="" name="title" >
+                     <select class=" d-block bg-dark text-white" id="" name="title" >
                         <?php 
                             foreach($data as $fila){
                         ?>
