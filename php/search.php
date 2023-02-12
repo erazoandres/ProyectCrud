@@ -3,16 +3,17 @@
     include_once "footer.php";
     include_once "conection.php";
 
-    
+    if(isset($name)){
+            
+        $name_get = $_GET["userPostSearch"];
 
-    $name = $_POST["userPostSearch"];
+    }else{
+        $name = $_POST["userPostSearch"];
+        $sentencia = $conn->prepare("SELECT * FROM post WHERE writer ='$name' or writer = '$name_get'");
+        $sentencia->execute();
+        $res = $sentencia->fetchAll();
+    }
 
-    $sentencia = $conn->prepare("SELECT * FROM post WHERE writer ='$name'");
-    $sentencia->execute();
-
-    $res = $sentencia->fetchAll();
-
-    
 
 ?>
 

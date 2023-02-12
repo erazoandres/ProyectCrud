@@ -66,7 +66,7 @@
             <div class="d-flex flex-wrap my-4"> 
 
                 <!-- TARGETA 1 -->
-                <div class="col bg-secondary p-5 text-center mx-3">
+                <div class="col bg-secondary p-5 text-center mx-3 d-lg-block d-none">
                     
                     <a class="d-block " href="" style="color:gold">
                         <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
@@ -80,7 +80,7 @@
                 </div>
 
                 <!-- TARGETA 2 -->
-                <div class="col bg-secondary p-5 text-center mx-3">
+                <div class="col bg-secondary p-5 text-center mx-3 d-lg-block d-none">
                     
                     <a class="d-block " href="" style="color:gold">
                         <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32"  fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
