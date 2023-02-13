@@ -3,7 +3,7 @@
     include_once "footer.php";
     include_once "conection.php";
 
-    $name_get = $_GET["userPostSearch"];
+    // $name_get = $_GET["userPostSearch"]; REVISAR ESTO DESPUES
     $name = $_POST["userPostSearch"];
 
     if(isset($name_get)){
@@ -19,15 +19,15 @@
     }
 ?>
 
-<div class="p-4 d-flex mt-3 row justify-content-center ">
-        <div class="p-4 mb-3">
+<div class="d-flex px-4 row justify-content-center ">
+        <div class="p-4 mb-2">
             <h2 style="font-family:Playfair Display, Georgia, Times New Roman, serif" class="text-light">Mira!, esto es lo que encontre:</h2>
         </div>  
     <?php
         foreach($res as $fila){
     ?>
    
-    <div class="col-md-3">
+    <div class="col-md-3 p-2">
 
             <a style="text-decoration:none;color:white" href="articleUser.php?title=<?php echo $fila["title"] ?>">
 

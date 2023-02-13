@@ -34,7 +34,7 @@
     <body>
         <div class="d-flex container">
 
-            <div class="col-8">
+            <div class="col-lg-8">
 
                 <div class="px-4">
 
@@ -54,7 +54,7 @@
                 </div> 
             </div> 
 
-            <div class="col-4">
+            <div class="col-4 d-none d-md-block">
                 <div class=" p-4" style = "position:sticky;top:0;"  >
 
                     <div>

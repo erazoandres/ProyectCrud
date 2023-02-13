@@ -24,11 +24,12 @@
 
                   <div class="mb-3">
                      <label class="text-capitalize form-label" for="">¿Cual quieres eliminar?:</label>
-                     <select class=" d-block bg-dark text-white" id="" name="title" >
+      <!-- Recuerda estilizar esto -->
+                     <select class=" d-block bg-dark text-white" id="" name="title" > 
                         <?php 
                             foreach($data as $fila){
                         ?>
-                        <option value= "<?php echo  $fila["title"] ?>"> <?php echo  $fila["title"] ?> </option>
+                        <option class="p-2" value= "<?php echo  $fila["title"] ?>"> <?php echo  $fila["title"] ?> </option>
                         <?php
                             }
                         ?>

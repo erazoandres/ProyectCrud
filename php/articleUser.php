@@ -27,7 +27,7 @@
     <body class="bg-dark">  
         <div class="d-flex container">
 
-            <div class="col-8">
+            <div class="col-lg-8">
 
                 <div class="px-4">
 
@@ -47,7 +47,7 @@
                 </div> 
             </div> 
 
-            <div class="col-4">
+            <div class="col-4 d-none d-md-block">
                 <div class="p-4 text-white" style="position:sticky ; top:0">
                     <h3 class="card card-header border">About something</h3>
                     <p class="card card-body text-black" style="border-top-left-radius:0;border-top-right-radius:0">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestias doloremque tenetur quaerat animi magni aspernatur, libero nesciunt ab corporis consectetur?</p>
