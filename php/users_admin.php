@@ -26,18 +26,18 @@
           <div class="">
             
             <div class=" card card-header bg-primary text-white p-2" style="user-select: none">
-              <strong> USERS TABLE</strong>
+              <strong> USUARIOS   </strong>
             </div>
 
             <table class="table table-bordered table-hover table-striped table-dark" style="user-select: none;">
               <thead style="position:sticky;top:0">
                 <tr>
                   <th>#</th>
-                  <th scope="col">Name</th>
+                  <th scope="col">Nombre</th>
                   <th>Email</th>
-                  <th>Pass</th>
-                  <th>Active</th>
-                  <th>Articles</th>
+                  <th>Password</th>
+                  <th>Estado</th>
+                  <th>Articulos</th>
         
                 </tr>
               </thead>
@@ -92,25 +92,25 @@
       <div class="col-auto mx-auto p-2" style="height:70vh">  
         <div class="card">  
 
-          <div class="card card-header bg-primary text-white user-select-none text-capitalize p-2"> <strong>REGISTER USER</strong></div>
+          <div class="card card-header bg-primary text-white user-select-none text-capitalize p-2"> <strong>REGISTRO</strong></div>
           
           <!-- FORMULARIO -->
           <form action="insert.php" class="p-3 bg-dark text-white" method="post">
 
 
-            <div class="mb-1">
-              <label class="text-capitalize form-label" for="">name:</label>
+            <div class="mb-2">
+              <label class="text-capitalize form-label mb-0" for="">NOMBRE</label>
               <input class="form-control bg-dark text-white" type="text" name="name">
             </div>
-            <div class="mb-1">
-              <label class="text-capitalize form-label" for="">email:</label>
+            <div class="mb-2">
+              <label class="text-capitalize form-label mb-0" for="">EMAIL</label>
               <input class="form-control bg-dark text-white" type="text" name="email">
             </div>
-            <div class="mb-1">
-              <label class="text-capitalize form-label" for="">pass:</label>
-              <input class="form-control bg-dark text-white mt-md-2" type="password" name="pass">
+            <div class="">
+              <label class="text-capitalize form-label mb-0" for="" >PASSWORD</label>
+              <input class="form-control bg-dark text-white " type="password" name="pass">
             </div>
-            <div class=" text-center d-grid mt-2">
+            <div class=" text-center d-grid mt-4">
               <input  class="p-2 btn btn-outline-success" type="submit" value = "Registrar" >
             </div>
 
