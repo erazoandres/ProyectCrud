@@ -17,14 +17,14 @@
       <div class="col-md-3 mx-auto mt-4">
             <div class="card">
 
-               <div class="card card-header bg-primary text-white user-select-none text-capitalize"> <strong>ELIMINAR ARTICULO</strong></div>
+               <div class="card card-header bg-primary text-white user-select-none text-capitalize"> <strong>ACTUALIZAR ARTICULO</strong></div>
                
                <!-- FORMULARIO -->
                
                <form action="edit_article.php" class="p-4 bg-dark text-white" method="post">
 
                   <div class="mb-3">
-                     <label class="text-capitalize form-label" for="">¿Cual quieres editar?:</label>
+                     <label class="text-capitalize form-label" for="">¿Cual quieres editar?</label>
       <!-- Recuerda estilizar esto -->
                      <select class=" d-block bg-dark text-white" id="" name="title" > 
                         <?php 
