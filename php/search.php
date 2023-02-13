@@ -17,8 +17,6 @@
         $sentencia->execute();
         $res = $sentencia->fetchAll();
     }
-
-
 ?>
 
 <div class="p-4 d-flex mt-3 row justify-content-center ">
@@ -37,8 +35,6 @@
                 <p class="border bg-secondary p-2 text-white mb-0"><strong><?php echo $fila["type"] ?></strong></p>
                 <!-- <p class="card card-footer"><?php echo $fila["writer"] ?></p> -->
 
-                <!-- <blockquote class="blockquote-footer"></blockquote> -->
-
             </a>
     </div>
 
@@ -46,4 +42,3 @@
         }
     ?>
 </div>
-

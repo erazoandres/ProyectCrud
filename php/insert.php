@@ -25,5 +25,4 @@
         header('Location:users_admin.php?status=error');
     }
 
-
 ?>

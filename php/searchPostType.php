@@ -3,17 +3,10 @@
     include_once "footer.php";
     include_once "conection.php";
 
-    
-
     $name = $_GET["type"];
-
     $sentencia = $conn->prepare("SELECT * FROM post WHERE type ='$name'");
     $sentencia->execute();
-
     $res = $sentencia->fetchAll();
-
-    
-
 ?>
 
 <div class="p-4 d-flex mt-3 row justify-content-center ">

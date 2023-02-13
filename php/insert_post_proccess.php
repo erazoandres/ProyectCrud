@@ -1,5 +1,7 @@
+
+
 <?php
-if(isset($_POST["submit"])){
+    if(isset($_POST["submit"])){
     
 
         /*
@@ -35,12 +37,7 @@ if(isset($_POST["submit"])){
 
 ?>
 
-
-
-
 <?php
-
-
 
     include_once "conection.php";
     session_start();
@@ -48,33 +45,28 @@ if(isset($_POST["submit"])){
     $title = $_POST["title"];
     $type = $_POST["type"];
     $data = date('y-m-d');
-    // $data = date('y-m-d' , strtotime($_POST["date"]));
     $content = $_POST["content"];
     $writer = $_SESSION["name"];
 
     
-//    INSERCION DE IMAGEN DE ARTICULO
-        $check = getimagesize($_FILES["image"]["tmp_name"]);
+    //INSERCION DE IMAGEN DE ARTICULO
+    $check = getimagesize($_FILES["image"]["tmp_name"]);
 
-        if($check !== false){
-            $image = $_FILES['image']['tmp_name'];
-            $imgContent = addslashes(file_get_contents($image));
-            
-            //Insert image content into database
-            $insert = $conn->prepare("INSERT into images (image, title) VALUES ('$imgContent', '$title')");
-            $insert->execute();
-            
-        }
-    
+    if($check !== false){
+        $image = $_FILES['image']['tmp_name'];
+        $imgContent = addslashes(file_get_contents($image));
+        
+        //Insert image content into database
+        $insert = $conn->prepare("INSERT into images (image, title) VALUES ('$imgContent', '$title')");
+        $insert->execute();
+        
+    }
     
     $sentencia = $conn->prepare("INSERT INTO post(title,type,date,writer,content) VALUES('$title','$type' ,'$data','$writer', '$content')");
     $sentencia->execute();
 
-
-
     if(isset($sentencia)){
         header("Location:index.php");
     }
-
 
 ?>

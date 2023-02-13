@@ -9,16 +9,12 @@
     $pass  = $_POST["pass"];
     $active = $_POST["active"];
     
-
     $sentencia = $conn->prepare("UPDATE users SET nombre = '$name', email = '$email',pass = '$pass', active = '$active' WHERE nombre = '$id'");
     $sentencia->execute();  
-
 
     if($sentencia->rowCount()>0){
         header("Location:users_admin.php?status=edited");
     }else{
         header("Location:users_admin.php?status=editedError");
     }
-
-    
 ?>

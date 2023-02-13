@@ -7,7 +7,6 @@ if(isset($_POST["submit"])){
         
         //Insert image content into database
         $insert = $db->query("INSERT into images (image, created) VALUES ('$imgContent', '$dataTime')");
-        
     }
 }
 ?>
