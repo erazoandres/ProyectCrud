@@ -1,4 +1,13 @@
-<?php session_start() ?>
+<?php 
+    include_once "conection.php";
+
+    $title = $_POST["title"];
+
+    $sentencia = $conn->prepare("SELECT * FROM post WHERE title = '$title'");
+    $sentencia->execute();
+    $res = $sentencia->fetchAll();
+
+?>
 
 <!doctype html>
 <html lang="en">
@@ -71,13 +80,13 @@
         <div class="container">
             <nav class="nav d-flex">
 
-                <div class="col-1 p-2">
-                    <a class="nav-link px-2 " title = "Edita un articulo" style = "border-right:1px solid white ; height:100% ; width:100% " href="choose_edit_article.php?userPostSearch=<?php echo $_SESSION["name"] ?>"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" class="bi bi-credit-card-2-front" viewBox="0 0 16 16">
+                <!-- <div class="col-1 p-2 ">
+                    <a class="nav-link px-2 " title = "Edita un articulo" style = "border-right:1px solid white ; height:100% ; width:100% " href="edit_article.php?userPostSearch=<?php echo $_SESSION["name"] ?>"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" class="bi bi-credit-card-2-front" viewBox="0 0 16 16">
                         <path d="M14 3a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h12zM2 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H2z"/>
                         <path d="M2 5.5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5v-1zm0 3a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5zm0 2a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 0 1h-1a.5.5 0 0 1-.5-.5zm3 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 0 1h-1a.5.5 0 0 1-.5-.5zm3 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 0 1h-1a.5.5 0 0 1-.5-.5zm3 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 0 1h-1a.5.5 0 0 1-.5-.5z"/>
                         </svg>
                     </a>
-                </div>
+                </div> -->
 
                 <div class="col-1 p-2">
                     <a class="nav-link px-2" title = "Elimina un articulo"  style = "border-right:1px solid white ; height:100% ;  width:100%; " href=""><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" class="bi bi-trash3" viewBox="0 0 16 16">
@@ -100,15 +109,15 @@
         <div class="container p-4 ">
             <div class="row">
                 <div class="col bg-dark p-0">
-                    <form action="insert_post_proccess.php" class="mx-0 text-center" method="POST" enctype="multipart/form-data">
+                    <form action="edit_article_proccess.php" class="mx-0 text-center" method="POST" enctype="multipart/form-data">
 
                         <div>
-                            <h2 class="text-center my-auto lead "><input type="text" maxlength="40" name = "title" style="width:100%;font-size:1.5em;outline:none" class="text-center p-4 bg-dark text-white" max="10" placeholder="Ingresa titulo" required></h2>
+                            <h2 class="text-center my-auto lead "><input value="<?php echo $res[0]["title"];?>" type="text" maxlength="40" name = "title" style="width:100%;font-size:1.5em;outline:none" class="text-center p-4 bg-dark text-white" max="10" placeholder="Ingresa titulo" required></h2>
                             
                         </div>
 
                         <div style="height:100vh">
-                            <textarea class="p-4 lead bg-dark text-white" name="content" id="" cols="30" rows="" placeholder="Escribe aqui tu contenido..." style="width:100%;height:100%;margin:0; padding:0;outline:none" required></textarea>
+                            <textarea class="p-4 lead bg-dark text-white" value="dddd" name="content" id="" cols="30" rows="" placeholder="Escribe aqui tu contenido..." style="width:100%;height:100%;margin:0; padding:0;outline:none" required><?php echo $res[0]["content"]?></textarea>
                         </div>
 
 
@@ -136,6 +145,7 @@
 
                      
                         <div class="d-grid"><button type="submit" value="UPLOAD" class=" btn btn-outline-primary p-3">Postear</button></div>
+                        <input type="hidden" name="old_title" value="<?php echo $title ?>">
                     </form>
                 </div>
 

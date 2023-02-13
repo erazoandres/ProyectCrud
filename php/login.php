@@ -39,15 +39,15 @@
 
                         <div class="mb-3">
                         <label class="text-capitalize form-label" for="">name:</label>
-                        <input class="form-control bg-dark text-white" type="text" name="name" value="">
+                        <input class="form-control bg-dark text-white" type="text" name="name" value="" required>
                         </div>
                         <div class="mb-3">
                         <label class="text-capitalize form-label" for="">email:</label>
-                        <input class="form-control bg-dark text-white" type="text" name="email" value="">
+                        <input class="form-control bg-dark text-white" type="text" name="email" value="" required>
                         </div>
                         <div class="mb-3">
                         <label class="text-capitalize form-label" for="">pass:</label>
-                        <input class="form-control bg-dark text-white" type="password" name="pass" value="">
+                        <input class="form-control bg-dark text-white" type="password" name="pass" value="" required>
                         </div>
                         <div class=" text-center d-grid mt-3">
                         <input  class="p-2 btn btn-outline-success" type="submit" value = "Log in" >

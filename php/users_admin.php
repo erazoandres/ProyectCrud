@@ -19,7 +19,7 @@
 <div class="container mt-4 bg-dark" style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif">
   <div class="row ">
       <!-- CONTAINER TABLE -->
-      <div class="col-md-6 overflow-auto" style="height:70vh">
+      <div class="col-md-6 overflow-auto p-2" style="height:70vh">
         <div class="bg-dark">
     
           
@@ -89,7 +89,7 @@
       </div>
 
       <!-- CONTAINER FORM -->
-      <div class="col-auto mx-auto" style="height:70vh">  
+      <div class="col-auto mx-auto p-2" style="height:70vh">  
         <div class="card">  
 
           <div class="card card-header bg-primary text-white user-select-none text-capitalize p-2"> <strong>REGISTER USER</strong></div>
