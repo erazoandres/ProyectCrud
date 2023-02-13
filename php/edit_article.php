@@ -151,14 +151,14 @@
 
                 <div class="col-4  d-none d-md-block " style="height:100vh ; position:sticky;top:0; ">
                     <div class="my-3" >
-                        <div class="card p-2">
+                        <div class="card p-2 bg-dark text-white border">
                             <div class="card-header"><h5>Card title 1</h5></div>
                             <div class="card-body card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium, fuga?</div>
                             <div class="card-footer text-secondary">Lorem, ipsum.</div>
                         </div>
                     </div>
                     <div class="my-3">
-                        <div class="card p-2">
+                        <div class="card p-2 bg-warning text-dark">
                             <div class="card-header"><h5>Card title 2</h5></div>
                             <div class="card-body card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium, fuga?</div>
                             <div class="card-footer text-secondary">Lorem, ipsum.</div>

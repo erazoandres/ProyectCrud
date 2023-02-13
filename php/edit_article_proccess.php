@@ -17,9 +17,9 @@
 
 
     if($sentencia->rowCount()>0){
-        header('Location:index.php?status=EditArtSuccess');
+        header('Location:index.php?status=editArtSuccess');
     }else{
-        header('Location:index.php?status=EditArtError');
+        header('Location:index.php?status=notEdited');
     }
 ?>
 
