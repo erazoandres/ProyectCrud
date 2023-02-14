@@ -8,8 +8,9 @@
     $email = $_POST["email"];
     $pass  = $_POST["pass"];
     $active = $_POST["active"];
+    $cargo = $_POST["cargo"];
     
-    $sentencia = $conn->prepare("UPDATE users SET nombre = '$name', email = '$email',pass = '$pass', active = '$active' WHERE nombre = '$id'");
+    $sentencia = $conn->prepare("UPDATE users SET nombre = '$name',cargo = '$cargo', email = '$email',pass = '$pass', active = '$active' WHERE nombre = '$id'");
     $sentencia->execute();  
 
     if($sentencia->rowCount()>0){

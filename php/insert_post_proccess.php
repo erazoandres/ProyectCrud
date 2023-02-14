@@ -1,12 +1,12 @@
 
 
 <?php
+/*
     if(isset($_POST["submit"])){
     
 
         /*
-         * Insert image data into database
-         */
+         
         
         //DB details
         $dbHost     = 'localhost';
@@ -34,6 +34,7 @@
     }else{
         echo "Please select an image file to upload.";
     }
+    */
 
 ?>
 
@@ -43,14 +44,14 @@
     session_start();
 
     $title = $_POST["title"];
-    $type = $_POST["type"];
+    $type = $_SESSION["cargo"];
     $data = date('y-m-d');
     $content = $_POST["content"];
     $writer = $_SESSION["name"];
 
     
     //INSERCION DE IMAGEN DE ARTICULO
-    $check = getimagesize($_FILES["image"]["tmp_name"]);
+    /*$check = getimagesize($_FILES["image"]["tmp_name"]);
 
     if($check !== false){
         $image = $_FILES['image']['tmp_name'];
@@ -61,6 +62,7 @@
         $insert->execute();
         
     }
+    */
     
     $sentencia = $conn->prepare("INSERT INTO post(title,type,date,writer,content) VALUES('$title','$type' ,'$data','$writer', '$content')");
     $sentencia->execute();

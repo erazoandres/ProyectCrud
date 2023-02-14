@@ -111,8 +111,10 @@
                             <textarea class="p-4 lead bg-dark text-white" name="content" id="" cols="30" rows="" placeholder="Escribe aqui tu contenido..." style="width:100%;height:100%;margin:0; padding:0;outline:none" required></textarea>
                         </div>
 
+                        <input type="hidden" name="type" value="<?php echo $_SESSION["cargo"] ?>">
 
-                            <!-- INPUTS IMAGEN Y CATEGORIA -->
+<!--  
+                            INPUTS IMAGEN Y CATEGORIA
                             <div class="d-flex border-0">
 
                                 <select class="p-2  bg-dark text-white" name="type" id="">
@@ -132,7 +134,7 @@
 
                                 <input type="file" name="image"/>
 
-                            </div>
+                            </div> -->
 
                      
                         <div class="d-grid"><button type="submit" value="UPLOAD" class=" btn btn-outline-primary p-3">Postear</button></div>

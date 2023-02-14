@@ -15,8 +15,13 @@
 
     if($sentencia->rowCount()>0){
         $_SESSION["name"] = "$name";
-        $_SESSION["active"] = $res["active"];
+        $_SESSION["active"] = "active";
+        $_SESSION["cargo"]  = $res[0]["cargo"];
+
+        
         header("Location:index.php?status=welcome");
+
+        
     }else{
         echo "No estas registrado";
     }
