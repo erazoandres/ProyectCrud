@@ -5,7 +5,9 @@
     include "footer.php";
     include "conection.php";
 
-    $sentencia = $conn->prepare("SELECT * FROM post ORDER BY id DESC");
+    $cargo = $_SESSION["cargo"];
+
+    $sentencia = $conn->prepare("SELECT * FROM post WHERE type = '$cargo'  ORDER BY id DESC");
     $sentencia->execute();
 
     $sentencia2 = $conn->prepare("SELECT image FROM images ORDER BY id DESC");
