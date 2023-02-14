@@ -33,7 +33,8 @@
               <thead style="position:sticky;top:0">
                 <tr>
                   <th>#</th>
-                  <th scope="col">Nombre</th>
+                  <th>Nombre</th>
+                  <th>Cargo</th>
                   <th>Email</th>
                   <th>Password</th>
                   <th>Estado</th>
@@ -54,6 +55,7 @@
                 <tr>
                   <td><strong> <?php echo $i ?><strong> </td>
                   <td><?php echo $fila["nombre"] ?></td>
+                  <td><?php echo $fila["cargo"] ?></td>
                   <td><?php echo $fila["email"] ?></td>
                   <td><?php echo $fila["pass"] ?></td>
                   <td><?php  echo $fila["active"] ?></td>
@@ -106,10 +108,27 @@
               <label class="text-capitalize form-label mb-0" for="">EMAIL</label>
               <input class="form-control bg-dark text-white" type="text" name="email">
             </div>
-            <div class="">
+            <div class="mb-2">
               <label class="text-capitalize form-label mb-0" for="" >PASSWORD</label>
               <input class="form-control bg-dark text-white " type="password" name="pass">
             </div>
+            
+            <div class="mb-2">
+              <label class="text-capitalize form-label mb-0" for="" >CARGO</label>
+              <select class="form-control bg-dark text-white mb-0" name="cargo" id="">
+                
+                <!-- CARGOS -->
+                  <option value="Cargo 1">Cargo 1</option>
+                  <option value="Cargo 2">Cargo 2</option>
+                  <option value="Cargo 3">Cargo 3</option>
+                  <option value="Cargo 4">Cargo 4</option>
+                  <option value="Cargo 5">Cargo 5</option>
+                  <option value="Cargo 6">Cargo 6</option>
+                  <option value="Cargo 7">Cargo 7</option>
+                  <option value="Cargo 8">Cargo 8</option>
+              </select>
+            </div>
+            
             <div class=" text-center d-grid mt-4">
               <input  class="p-2 btn btn-outline-success" type="submit" value = "Registrar" >
             </div>

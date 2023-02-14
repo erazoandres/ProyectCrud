@@ -8,6 +8,7 @@
     include_once "../php/conection.php";
 
     $name =  $_POST["name"];
+    $cargo =  $_POST["cargo"];
     $email = $_POST["email"];
     $pass =  $_POST["pass"];                                                                                                                                                                                            
     
@@ -16,7 +17,7 @@
     $array_users = $sentencia->fetchAll();
 
     if(count($array_users) == 0){
-        $sentencia2 = $conn->prepare("INSERT INTO users(nombre,email,pass) VALUES('$name', '$email' , '$pass')");
+        $sentencia2 = $conn->prepare("INSERT INTO users(nombre,cargo,email,pass) VALUES('$name','$cargo', '$email' , '$pass')");
         $sentencia2->execute();
         header('Location:users_admin.php?status=sucess');
     }elseif(count($array_users)==1){
