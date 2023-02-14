@@ -10,7 +10,7 @@
 
     $res = $sentencia->fetch(PDO::FETCH_OBJ);
 
-    echo $res->writer;
+    // echo $res->writer;
 ?>
 
 
@@ -34,7 +34,7 @@
     <body>
         <div class="d-flex container">
 
-            <div class="col-lg-8">
+            <div class="col-lg-8 py-4">
 
                 <div class="px-4">
 
