@@ -4,7 +4,7 @@
     include_once "conection.php";
 
     // $name_get = $_GET["userPostSearch"]; REVISAR ESTO DESPUES
-    $name = $_POST["userPostSearch"];
+    $title = $_POST["userPostSearch"];
 
     if(isset($name_get)){
             
@@ -13,7 +13,7 @@
         $res = $sentencia->fetchAll();
 
     }else{
-        $sentencia = $conn->prepare("SELECT * FROM post WHERE writer ='$name'");
+        $sentencia = $conn->prepare("SELECT * FROM post WHERE title ='$title'");
         $sentencia->execute();
         $res = $sentencia->fetchAll();
     }

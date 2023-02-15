@@ -59,7 +59,7 @@
                     </ul>
 
                     <!-- BOTON CERRAR -->
-                    <form class="form col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" action="search.php" method="post"><input title="Busca un escritor" class="form-control bg-dark text-white" type="search" name="userPostSearch" placeholder="Search writer..."></form>
+                    <form class="form col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" action="search.php" method="post"><input title="Busca un escritor" class="form-control bg-dark text-white" type="search" name="userPostSearch" placeholder="Search article..."></form>
                     
                     <div class="d-lg-block d-none">
                         <a href="login.php" class="text-danger " title="Cerrar sesion">

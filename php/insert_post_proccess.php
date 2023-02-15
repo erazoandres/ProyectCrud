@@ -1,5 +1,3 @@
-
-
 <?php
 /*
     if(isset($_POST["submit"])){
@@ -43,13 +41,39 @@
     include_once "conection.php";
     session_start();
 
-    $title = $_POST["title"];
-    $type = $_SESSION["cargo"];
-    $data = date('y-m-d');
-    $content = $_POST["content"];
-    $writer = $_SESSION["name"];
+    if(isset($_POST["submit"])){
+        echo "si post";
+        if(is_uploaded_file($_FILES["file"]["tmp_name"])){  
 
+            $ruta = "upload/";
+            $nombre_final = trim($_FILES["file"]["name"]);
+            $nombre_final = mb_ereg_replace(" ","",$nombre_final);
+            $upload = $ruta.$nombre_final;
+            
+            $title = "hello";
+            $image = $_FILES['file']['tmp_name'];
+            $imgContent = addslashes(file_get_contents($image));
+
+            $sentencia = $conn->prepare("INSERT INTO images(image,title) VALUES('$imgContent' , '$title')");
+            $sentencia->execute();
+
+        
+        }
+
+        $title = $_POST["title"];
+        $type = $_SESSION["cargo"];
+        $data = date('y-m-d');
+        $content = $_POST["content"];
+        $writer = $_SESSION["name"];
+
+        $sentencia = $conn->prepare("INSERT INTO post(title,type,date,writer,content) VALUES('$title','$type' ,'$data','$writer', '$content')");
+        $sentencia->execute();
     
+        if(isset($sentencia)){
+            header("Location:index.php");
+        }
+    }
+
     //INSERCION DE IMAGEN DE ARTICULO
     /*$check = getimagesize($_FILES["image"]["tmp_name"]);
 
@@ -63,12 +87,4 @@
         
     }
     */
-    
-    $sentencia = $conn->prepare("INSERT INTO post(title,type,date,writer,content) VALUES('$title','$type' ,'$data','$writer', '$content')");
-    $sentencia->execute();
-
-    if(isset($sentencia)){
-        header("Location:index.php");
-    }
-
 ?>

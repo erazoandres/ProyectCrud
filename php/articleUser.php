@@ -7,7 +7,6 @@
     $sentencia->execute();
 
     $res = $sentencia->fetch(PDO::FETCH_OBJ);
-    echo $res->writer;
 ?>
 
 
