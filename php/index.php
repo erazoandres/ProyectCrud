@@ -10,7 +10,7 @@
     $sentencia = $conn->prepare("SELECT * FROM post WHERE type = '$cargo'  ORDER BY id DESC");
     $sentencia->execute();
 
-    $sentencia2 = $conn->prepare("SELECT image FROM images ORDER BY id DESC");
+    $sentencia2 = $conn->prepare("SELECT file FROM files");
     $sentencia2->execute();
 
     $resultado = $sentencia->fetchAll();

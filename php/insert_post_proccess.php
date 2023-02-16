@@ -40,37 +40,50 @@
 
     include_once "conection.php";
     session_start();
+    $title = $_POST["title"];
 
     if(isset($_POST["submit"])){
-        echo "si post";
+       
         if(is_uploaded_file($_FILES["file"]["tmp_name"])){  
 
             $ruta = "upload/";
             $nombre_final = trim($_FILES["file"]["name"]);
             $nombre_final = mb_ereg_replace(" ","",$nombre_final);
             $upload = $ruta.$nombre_final;
-            
-            $title = "hello";
-            $image = $_FILES['file']['tmp_name'];
-            $imgContent = addslashes(file_get_contents($image));
 
-            $sentencia = $conn->prepare("INSERT INTO images(image,title) VALUES('$imgContent' , '$title')");
-            $sentencia->execute();
+            $file_name_ext = explode(".",$upload);
+            $file_ext = strtolower(end($file_name_ext));
 
-        
-        }
+            $type_allowed = array('jpg', 'gif', 'png', 'zip', 'txt', 'xls', 'doc' , 'mp4','pdf');
 
-        $title = $_POST["title"];
-        $type = $_SESSION["cargo"];
-        $data = date('y-m-d');
-        $content = $_POST["content"];
-        $writer = $_SESSION["name"];
+            if(in_array($file_ext , $type_allowed) ){
 
-        $sentencia = $conn->prepare("INSERT INTO post(title,type,date,writer,content) VALUES('$title','$type' ,'$data','$writer', '$content')");
-        $sentencia->execute();
+                $image = $_FILES['file']['tmp_name'];
+                $imgContent = addslashes(file_get_contents($image));
     
-        if(isset($sentencia)){
-            header("Location:index.php");
+                $sentencia = $conn->prepare("INSERT INTO files(file,title) VALUES('$imgContent' , '$title')");
+                $sentencia->execute();
+    
+            }else{
+                echo "No puedes subir este archivo: <br> Revisa su extencion";
+                echo "<br>Las extenciones permitidas son estas: " ;
+                foreach($type_allowed as $fila){
+                    echo " ".$fila." ";
+                }
+
+            }
+            
+            $type = $_SESSION["cargo"];
+            $data = date('y-m-d');
+            $content = $_POST["content"];
+            $writer = $_SESSION["name"];
+    
+            $sentencia = $conn->prepare("INSERT INTO post(title,type,date,writer,content) VALUES('$title','$type' ,'$data','$writer', '$content')");
+            $sentencia->execute();
+        
+            if(isset($sentencia)){
+                header('Location:insert_post.php');
+            }
         }
     }
 

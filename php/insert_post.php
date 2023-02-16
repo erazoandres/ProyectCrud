@@ -1,4 +1,5 @@
-<?php session_start() ?>
+<?php session_start() ;?>
+
 
 <!doctype html>
 <html lang="en">
@@ -100,7 +101,7 @@
         <div class="container p-4 ">
             <div class="row">
                 <div class="col bg-dark p-0">
-                    <form action="insert_post_proccess.php" class="mx-0 text-center" method="POST" enctype="multipart/form-data">
+                    <form action="insert_post_proccess.php" class="mx-0 text-center" method="post" enctype="multipart/form-data">
 
                         <div>
                             <h2 class="text-center my-auto lead "><input type="text" maxlength="40" name = "title" style="width:100%;font-size:1.5em;outline:none" class="text-center p-4 bg-dark text-white" max="10" placeholder="Ingresa titulo" required></h2>
@@ -111,7 +112,7 @@
                             <textarea class="p-4 lead bg-dark text-white" name="content" id="" cols="30" rows="" placeholder="Escribe aqui tu contenido..." style="width:100%;height:100%;margin:0; padding:0;outline:none" required></textarea>
                         </div>
 
-                        <input type="hidden" name="type" value="<?php echo $_SESSION["cargo"] ?>">
+                        <input type="hidden" name="type" value="<?php echo $_SESSION["cargo"] ?>" >
                         
                         <div>
                             <a href=""><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" class="bi bi-paperclip" viewBox="0 0 16 16">
