@@ -58,8 +58,9 @@
 
             if(in_array($file_ext , $type_allowed) ){
 
-                $image = $_FILES['file']['tmp_name'];
+                $image = $_FILES['file']['tmp_name'];   
                 $imgContent = addslashes(file_get_contents($image));
+               
     
                 $sentencia = $conn->prepare("INSERT INTO files(file,title) VALUES('$imgContent' , '$title')");
                 $sentencia->execute();

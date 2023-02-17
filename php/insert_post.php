@@ -101,7 +101,7 @@
         <div class="container p-4 ">
             <div class="row">
                 <div class="col bg-dark p-0">
-                    <form action="insert_post_proccess.php" class="mx-0 text-center" method="post" enctype="multipart/form-data">
+                    <form action="videoPlayer.php" class="mx-0 text-center" method="post" enctype="multipart/form-data">
 
                         <div>
                             <h2 class="text-center my-auto lead "><input type="text" maxlength="40" name = "title" style="width:100%;font-size:1.5em;outline:none" class="text-center p-4 bg-dark text-white" max="10" placeholder="Ingresa titulo" required></h2>
@@ -120,8 +120,7 @@
                             </svg></a>
 
                             <input type="file" name="file" value="archivo" size="150" maxlength="150">
-                        </div>
-                        
+                        </div>                 
 
 <!--  
                             INPUTS IMAGEN Y CATEGORIA
