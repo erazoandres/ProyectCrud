@@ -95,6 +95,12 @@
                     </a>
                 </div>
 
+                <div class="col-1 p-2">
+
+                    <a href="imagenes2.php">dd</a>
+
+                </div>
+
             </nav>
         </div>
 
@@ -104,12 +110,12 @@
                     <form action="insert_post_process.php" class="mx-0 text-center" method="post" enctype="multipart/form-data">
 
                         <div>
-                            <h2 class="text-center my-auto lead "><input type="text" maxlength="40" name = "title" style="width:100%;font-size:1.5em;outline:none" class="text-center p-4 bg-dark text-white" max="10" placeholder="Ingresa titulo" required></h2>
+                            <h2 class="text-center my-auto lead "><input type="text" maxlength="40" name = "title" style="width:100%;font-size:1.5em;outline:none" class="text-center p-4 bg-dark text-white" max="10" placeholder="Ingresa titulo" required ></h2>
                             
                         </div>
 
                         <div style="height:100vh">
-                            <textarea class="p-4 lead bg-dark text-white" name="content" id="" cols="30" rows="" placeholder="Escribe aqui tu contenido..." style="width:100%;height:100%;margin:0; padding:0;outline:none" required></textarea>
+                            <textarea class="p-4 lead bg-dark text-white" name="content" id="" cols="30" rows="" placeholder="Escribe aqui tu contenido..." style="width:100%;height:100%;margin:0; padding:0;outline:none" ></textarea>
                         </div>
 
                         <input type="hidden" name="type" value="<?php echo $_SESSION["cargo"] ?>" >

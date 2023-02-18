@@ -65,14 +65,8 @@
     
                     $image = $_FILES['file']['tmp_name'];   
                     $imgContent = addslashes(file_get_contents($image));
-
-
-                    $imagenSubida = fopen($_FILES['file']['tmp_name'], 'r');
-                    $tamanoArchivo = $_FILES['file']['size'];
-                    $binariosImagen = fread($imagenSubida, $tamanoArchivo);
-                   
         
-                    $sentencia = $conn->prepare("INSERT INTO files(file,title,postTitle) VALUES('".$binariosImagen."' ,'$nombre_final','$title')");
+                    $sentencia = $conn->prepare("INSERT INTO files(file,type,title,postTitle) VALUES('".$imgContent."','".$file_ext."' ,'$nombre_final','$title')");
                     $sentencia->execute();
         
                 }else{
@@ -95,6 +89,7 @@
     
         if(isset($sentencia)){
             // header('Location:insert_post.php');
+            header('Location:imagenes2.php');   
         }
     }
 
