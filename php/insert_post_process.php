@@ -54,18 +54,25 @@
                 $nombre_final = trim($_FILES["file"]["name"]);
                 $nombre_final = mb_ereg_replace(" ","",$nombre_final);
                 $upload = $ruta.$nombre_final;
+
                 $file_name_ext = explode(".",$upload);
                 $file_ext = strtolower(end($file_name_ext));
+
+
                 $type_allowed = array('jpg', 'gif', 'png', 'zip', 'txt', 'xls', 'doc' ,'pdf');
     
                 if(in_array($file_ext , $type_allowed) ){
     
                     $image = $_FILES['file']['tmp_name'];   
-            
                     $imgContent = addslashes(file_get_contents($image));
+
+
+                    $imagenSubida = fopen($_FILES['file']['tmp_name'], 'r');
+                    $tamanoArchivo = $_FILES['file']['size'];
+                    $binariosImagen = fread($imagenSubida, $tamanoArchivo);
                    
         
-                    $sentencia = $conn->prepare("INSERT INTO files(file,title) VALUES('$imgContent' ,'$nombre_final')");
+                    $sentencia = $conn->prepare("INSERT INTO files(file,title,postTitle) VALUES('".$binariosImagen."' ,'$nombre_final','$title')");
                     $sentencia->execute();
         
                 }else{
