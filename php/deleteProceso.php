@@ -4,8 +4,10 @@
 
     $title = $_POST["title"];
     $sentencia = $conn->prepare("DELETE FROM post WHERE title = '$title'");
+    $sentencia2 = $conn->prepare("DELETE FROM files WHERE title = '$title'");
   
     $sentencia->execute();
+    $sentencia2->execute();
 
     if($sentencia->rowCount()>0){
         header('Location:users_admin.php?status=Postdeleted');

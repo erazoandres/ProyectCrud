@@ -58,15 +58,17 @@
                 $file_name_ext = explode(".",$upload);
                 $file_ext = strtolower(end($file_name_ext));
 
+                $writer = $_SESSION["name"];
 
-                $type_allowed = array('jpg', 'gif', 'png', 'zip', 'txt', 'xls', 'doc' ,'pdf');
+
+                $type_allowed = array('jpg', 'gif', 'png', 'zip', 'txt', 'xls', 'doc' ,'pdf','webp');
     
                 if(in_array($file_ext , $type_allowed) ){
     
                     $image = $_FILES['file']['tmp_name'];   
                     $imgContent = addslashes(file_get_contents($image));
         
-                    $sentencia = $conn->prepare("INSERT INTO files(file,type,title,postTitle) VALUES('".$imgContent."','".$file_ext."' ,'$nombre_final','$title')");
+                    $sentencia = $conn->prepare("INSERT INTO files(file,type,title,postTitle,writer) VALUES('".$imgContent."','".$file_ext."' ,'$nombre_final','$title','$writer')");
                     $sentencia->execute();
         
                 }else{
@@ -88,8 +90,8 @@
         $sentencia->execute();
     
         if(isset($sentencia)){
-            // header('Location:insert_post.php');
-            header('Location:imagenes2.php');   
+            header('Location:insert_post.php');
+           
         }
     }
 

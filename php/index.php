@@ -6,15 +6,20 @@
     include "conection.php";
 
     $cargo = $_SESSION["cargo"];
+    $name = $_SESSION["name"];
 
     $sentencia = $conn->prepare("SELECT * FROM post WHERE type = '$cargo'  ORDER BY id DESC");
     $sentencia->execute();
 
-    $sentencia2 = $conn->prepare("SELECT file FROM files");
+    $sentencia2 = $conn->prepare("SELECT * from files WHERE writer = '$name'");
     $sentencia2->execute();
 
-    $resultado = $sentencia->fetchAll();
-    $resultado2 = $sentencia2->fetchAll();
+    $articulos = $sentencia->fetchAll();
+    $imagenes = $sentencia2->fetchAll();
+
+
+
+
     
     ?>
 
@@ -93,10 +98,14 @@
         </div>
     </div>
 
-    <!-- TARGETAS FORMULARIOS -->
+    <!-- TARGETAS ARTICULOS RESUMEN -->
+    
     <div class="container">
         <div class="row mb-2">
-            <?php foreach($resultado as $fila){ ?>
+            <?php 
+            $i=0;
+            foreach($articulos as $fila){ ?>
+            
             
                 <div class="col-md-6">
                     <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
@@ -109,11 +118,11 @@
                             <a href="articleUser.php?title=<?php  echo $fila["title"]?>" class="stretched-link">Continue reading...</a>
                         </div>
                     <div class="col-auto d-none d-lg-block">
-                        <svg class="bd-placeholder-img" width="200" height="250" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+                        <img style="padding:2rem" width="300px" height="200px" src="data:image/<?php echo base64_encode($imagenes[$i]["type"]) ?>;base64,<?php echo base64_encode($imagenes[$i]["file"]) ?>" alt ="">
                     </div>
                 </div>
         </div>  
-            <?php } ?>
+            <?php $i = $i +1 ; } ?>
   
         </div>
     </div>

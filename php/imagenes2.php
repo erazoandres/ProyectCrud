@@ -10,8 +10,8 @@
 ?>
 
 
-<div>
-    <div style="padding:2rem">
+<div style="">
+    <div style="padding:2rem;">
     <?php
         $i = 0;
         foreach($res as $row){
