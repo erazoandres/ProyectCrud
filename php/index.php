@@ -118,7 +118,7 @@
                             <a href="articleUser.php?title=<?php  echo $fila["title"]?>" class="stretched-link">Continue reading...</a>
                         </div>
                     <div class="col-auto d-none d-lg-block">
-                        <img style="padding:2rem" width="300px" height="200px" src="data:image/<?php echo base64_encode($imagenes[$i]["type"]) ?>;base64,<?php echo base64_encode($imagenes[$i]["file"]) ?>" alt ="">
+                        <img width="300px" height="100%" src="data:image/<?php echo base64_encode($imagenes[$i]["type"]) ?>;base64,<?php echo base64_encode($imagenes[$i]["file"]) ?>" alt ="">
                     </div>
                 </div>
         </div>  
