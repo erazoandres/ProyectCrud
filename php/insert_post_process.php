@@ -61,7 +61,7 @@
                 $writer = $_SESSION["name"];
 
 
-                $type_allowed = array('jpg', 'gif', 'png', 'zip', 'txt', 'xls', 'doc' ,'pdf','webp');
+                $type_allowed = array('jpg', 'gif', 'png','webp');
     
                 if(in_array($file_ext , $type_allowed) ){
     

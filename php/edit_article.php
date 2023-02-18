@@ -121,28 +121,7 @@
                         </div>
 
 
-                            <!-- INPUTS IMAGEN Y CATEGORIA -->
-                            <div class="d-flex border-0">
-
-                                <select class="p-2  bg-dark text-white" name="type" id="">
-                                    <option class="text-primary" value="World">World</option>
-                                    <option class="text-secondary" value="Design">Design</option>
-                                    <option class="text-data" value="Culture">Culture</option>
-                                    <option class="text-warning" value="Bussiness">Bussiness</option>
-                                    <option class="text-info" value="Politics">Politics</option>
-                                    <option class="text-danger" value="Opinion">Opinion</option>
-                                    <option class="text-success" value="Technology">Technology</option>
-                                    <option class="text-primary" value="Science">Science</option>
-                                    <option class="text-muted" value="Health">Health</option>
-                                    <option class="text-body" value="Style">Style</option>
-                                    <option class="text-light" value="Travel">Travel</option>
-                        
-                                </select>
-
-                                <input type="file" name="image"/>
-
-                            </div>
-
+              
                      
                         <div class="d-grid"><button type="submit" value="UPLOAD" class=" btn btn-outline-primary p-3">Postear</button></div>
                         <input type="hidden" name="old_title" value="<?php echo $title ?>">

@@ -95,12 +95,6 @@
                     </a>
                 </div>
 
-                <div class="col-1 p-2">
-
-                    <a href="imagenes2.php">dd</a>
-
-                </div>
-
             </nav>
         </div>
 
