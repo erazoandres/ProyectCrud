@@ -2,7 +2,10 @@
 
     include_once "conection.php";
 
-    if($_POST["submit"]){
+    #Verifico que venga de un formulario y que el titulo
+    #Este establecido
+    
+    if($_POST["submit"] and isset($_POST["title"]) ){
 
         $title = $_POST["title"];
         $sentencia = $conn->prepare("DELETE FROM post WHERE title = '$title'");
