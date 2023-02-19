@@ -26,6 +26,10 @@
                 align-items: center;
                 justify-content: center; 
             }
+
+            .schemed-area {
+                color-scheme: light dark;
+            }
         </style>
 
     </head>
@@ -119,12 +123,17 @@
                         <div class="row">
 
                             <div class="col-6">
-                                <input class="form-control" type="file" name="file" value="archivo" size="150" maxlength="150">
+                                <input class="form-control " type="file" name="file"  size="150" maxlength="150">
+                             
                             </div>
 
                             <div class="col-6">
-                                <input class="form-control" type="file" name="adjunto" value="adjunto" size="150" maxlength="150">
+                                <input id="adj" class="form-control form-bg-dark" type="file" name="adjunto" placeholder="Inserta Adjunto" size="150" maxlength="150">
+                                
                             </div>
+
+                
+
                             
 
                         </div>                 
