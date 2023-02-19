@@ -4,7 +4,7 @@
     include_once "conection.php";
 
     // $name_get = $_GET["userPostSearch"]; REVISAR ESTO DESPUES
-    $title = $_POST["userPostSearch"];
+    $name_get = $_POST["userPostSearch"];
 
     if(isset($name_get)){
             

@@ -11,6 +11,7 @@
     $sentencia = $conn->prepare("SELECT * FROM post WHERE type = '$cargo'  ORDER BY id DESC");
     $sentencia->execute();
 
+    // $sentencia2 = $conn->prepare("SELECT * from files");
     $sentencia2 = $conn->prepare("SELECT * from files WHERE writer = '$name'");
     $sentencia2->execute();
 

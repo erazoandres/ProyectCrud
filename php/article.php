@@ -40,7 +40,7 @@
 
                     <div class="text-white overflow-hidden me-auto">
 
-                        <div class="pb-3" style="font-family:Playfair Display, Georgia, Times New Roman, serif">
+                        <div class="py-3 mt-3" style="font-family:Playfair Display, Georgia, Times New Roman, serif">
                             <strong><?php echo $res->type ?></strong>
                         </div>
 

@@ -21,7 +21,8 @@
     
         <div class ="container">
 
-            <div class="col-6 col-md-5 col-lg-4 mx-auto mt-4">
+            <!-- <div class="col-6 col-md-5 col-lg-4 mx-auto mt-4"> -->
+            <div class="col-3  mx-auto mt-4">
 
                 <div class="border-bottom p-4 mb-2">
                     <h2>Gracias!, te esperamos pronto</h2>
@@ -56,6 +57,7 @@
                     </form>
                 <div>      
             </div>
+            
         </div>  
     </body>
 </html>
