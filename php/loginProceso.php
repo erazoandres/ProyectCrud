@@ -11,12 +11,13 @@
     $sentencia = $conn->prepare("SELECT * FROM users WHERE nombre = '$name' AND email = '$email' AND pass = '$pass'");
     $sentencia->execute();
 
-    $res = $sentencia->fetchAll();
+    $res = $sentencia->fetchAll(PDO::FETCH_ASSOC);
 
+    $_SESSION["name"] = "$name";
+    // $_SESSION["active"] = "active";
+    $_SESSION["cargo"]  = $res[0]["cargo"];
+    
     if($sentencia->rowCount()>0){
-        $_SESSION["name"] = "$name";
-        $_SESSION["active"] = "active";
-        $_SESSION["cargo"]  = $res[0]["cargo"];
 
         
         header("Location:index.php?status=welcome");

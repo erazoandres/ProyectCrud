@@ -41,7 +41,7 @@
                 
                 #EXTENCIONES PERMITIDAS
                 $type_allowed_image = array('jpg', 'gif', 'png','webp');
-                $type_allowed_adjunto = array('jpg', 'gif', 'png','webp','pdf','doc','rar','zip','xls','ppt');
+                $type_allowed_adjunto = array('jpg', 'gif', 'png','webp','pdf','doc','rar','zip','xls','ppt','txt');
     
                 if(in_array($file_ext , $type_allowed_image ) and in_array($file_ext_adjunto , $type_allowed_adjunto ) ){
     
@@ -57,7 +57,7 @@
                     $sentencia_adj = $conn->prepare("INSERT INTO attachment(file,writer,title_post,type) VALUES('".$imgContent_adjunto."','$writer','$title','".$file_ext_adjunto."')");
                     $sentencia_adj->execute();
 
-                    $cargo = $_SESSION["cargo"];
+                    $type = $_SESSION["cargo"];
                     $date = date('y-m-d');
                     $content = $_POST["content"];
                     $writer = $_SESSION["name"];

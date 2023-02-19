@@ -136,6 +136,8 @@
           </form>
 
           <div>
+
+          <!-- ALERTAS -->
             <div class="card card-footer bg-dark my-auto">
             <?php
               #TO FIX

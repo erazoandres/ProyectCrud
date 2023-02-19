@@ -12,16 +12,19 @@
     $sentencia->execute();
 
     // $sentencia2 = $conn->prepare("SELECT * from files");
-    $sentencia2 = $conn->prepare("SELECT * from files WHERE writer = '$name'");
+    $sentencia2 = $conn->prepare("SELECT * from files WHERE writer = '$name' ORDER BY id DESC");
     $sentencia2->execute();
 
+    
     $articulos = $sentencia->fetchAll();
     $imagenes = $sentencia2->fetchAll();
-
-
-
-
     
+    if($sentencia2->rowCount()>0 ){
+        echo "yes";
+    }else{
+        echo "no";
+    }
+
     ?>
 
 <main class="py-3" >
@@ -31,8 +34,6 @@
         <div class=" col-12 bg-secondary">
             <ul class="nav d-flex justify-content-around py-3 my-3">
                 
-
-
                 <li><a class="nav-link text-decoration-underline text-white" style="font-size:1.2em" href="searchPostType.php?type=World">World</a></li>
                 <li><a class="nav-link text-decoration-underline text-white" style="font-size:1.2em" href="searchPostType.php?type=Technology">Technology</a></li>
                 <li><a class="nav-link text-decoration-underline text-white" style="font-size:1.2em" href="searchPostType.php?type=Design">Design</a></li>
@@ -119,7 +120,7 @@
                             <a href="articleUser.php?title=<?php  echo $fila["title"]?>" class="stretched-link">Continue reading...</a>
                         </div>
                     <div class="col-auto d-none d-lg-block">
-                        <img width="300px" height="100%" src="data:image/<?php echo base64_encode($imagenes[$i]["type"]) ?>;base64,<?php echo base64_encode($imagenes[$i]["file"]) ?>" alt ="">
+                        <img class="" width="300px" height="100%" src="data:image/<?php echo base64_encode($imagenes[$i]["type"]) ?>;base64,<?php echo base64_encode($imagenes[$i]["file"]) ?>" alt ="">
                     </div>
                 </div>
         </div>  
@@ -129,3 +130,5 @@
     </div>
     
 </main>
+
+
