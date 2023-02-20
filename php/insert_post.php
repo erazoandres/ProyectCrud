@@ -1,4 +1,10 @@
-<?php session_start() ;?>
+<?php session_start() ;
+
+    include_once 'conection.php';
+
+    $sentencia = $conn->prepare("SELECT COUNT")
+
+?>
 
 
 <!doctype html>
@@ -92,7 +98,7 @@
                 </div>
 
                 <div class="col-1 p-2">
-                    <a class="nav-link px-2 border-right-sm-0" title = "?" style = "border-right:1px solid white  ; height:100% ; width:100%;  " href="index.php">
+                    <a class="nav-link px-2 border-right-sm-0" title = "Salir" style = "border-right:1px solid white  ; height:100% ; width:100%;  " href="index.php">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="red" class="bi bi-box-arrow-in-left" viewBox="0 0 16 16" width="28" height="28" >
                             <path fill-rule="evenodd" d="M10 3.5a.5.5 0 0 0-.5-.5h-8a.5.5 0 0 0-.5.5v9a.5.5 0 0 0 .5.5h8a.5.5 0 0 0 .5-.5v-2a.5.5 0 0 1 1 0v2A1.5 1.5 0 0 1 9.5 14h-8A1.5 1.5 0 0 1 0 12.5v-9A1.5 1.5 0 0 1 1.5 2h8A1.5 1.5 0 0 1 11 3.5v2a.5.5 0 0 1-1 0v-2z"/>
                             <path fill-rule="evenodd" d="M4.146 8.354a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H14.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3z"/>
@@ -132,51 +138,24 @@
                                 
                             </div>
 
-                
-
-                            
-
                         </div>                 
-
-<!--  
-                            INPUTS IMAGEN Y CATEGORIA
-                            <div class="d-flex border-0">
-
-                                <select class="p-2  bg-dark text-white" name="type" id="">
-                                    <option class="text-primary" value="World">World</option>
-                                    <option class="text-secondary" value="Design">Design</option>
-                                    <option class="text-data" value="Culture">Culture</option>
-                                    <option class="text-warning" value="Bussiness">Bussiness</option>
-                                    <option class="text-info" value="Politics">Politics</option>
-                                    <option class="text-danger" value="Opinion">Opinion</option>
-                                    <option class="text-success" value="Technology">Technology</option>
-                                    <option class="text-primary" value="Science">Science</option>
-                                    <option class="text-muted" value="Health">Health</option>
-                                    <option class="text-body" value="Style">Style</option>
-                                    <option class="text-light" value="Travel">Travel</option>
-                        
-                                </select>
-
-                                <input type="file" name="image"/>
-
-                            </div> -->
-
                      
                         <div class="d-grid"><button name="submit" type="submit" value="UPLOAD" class=" btn btn-outline-primary p-3">Postear</button></div>
                     </form>
                 </div>
 
+                <!-- TARGETAS INSERCION FORMULARIO -->
                 <div class="col-4 d-none d-md-block " style="height:100vh ; position:sticky;top:0; ">
-                    <div class="my-3" >
+                    <!-- <div class="my-3" >
                         <div class="card bg-warning text-dark p-2 ">
-                            <div class="card-header"><h5>Card title 1</h5></div>
-                            <div class="card-body card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium, fuga?</div>
+                            <div class="card-header"><h5>Adjuntos</h5></div>
+                            <div class="card-body card-text"><ul><li></li></ul></div>
                             <div class="card-footer text-secondary">Lorem, ipsum.</div>
                         </div>
-                    </div>
+                    </div> -->
                     <div class="my-3">
                         <div class="card p-2 bg-dark text-light border">
-                            <div class="card-header"><h5>Card title 2</h5></div>
+                            <div class="card-header"><h5>Articulos recientes</h5></div>
                             <div class="card-body card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium, fuga?</div>
                             <div class="card-footer text-secondary">Lorem, ipsum.</div>
                         </div>
