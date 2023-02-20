@@ -103,13 +103,13 @@
     <!-- TARGETAS ARTICULOS RESUMEN -->
     
     <div class="container">
-        <div class="row mb-2">
+        <div class="row mb-2" >
             <?php 
             $i=0;
             foreach($articulos as $fila){ ?>
             
             
-                <div class="col-md-6">
+                <div class="col-md-6" >
                     <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
                         <div class="col p-4 d-flex flex-column position-static">
                             <strong class="d-inline-block mb-3 text-success"><?php echo $fila['type'] ?></strong>
@@ -120,7 +120,7 @@
                             <a href="articleUser.php?title=<?php  echo $fila["title"]?>" class="stretched-link">Continue reading...</a>
                         </div>
                     <div class="col-auto d-none d-lg-block">
-                        <img class="" width="300px" height="100%" src="data:image/<?php echo base64_encode($imagenes[$i]["type"]) ?>;base64,<?php echo base64_encode($imagenes[$i]["file"]) ?>" alt ="">
+                        <img class="" width="300px" height="250px" src="data:image/<?php echo base64_encode($imagenes[$i]["type"]) ?>;base64,<?php echo base64_encode($imagenes[$i]["file"]) ?>" alt ="">
                     </div>
                 </div>
         </div>  
