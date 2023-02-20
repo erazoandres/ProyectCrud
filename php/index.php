@@ -18,12 +18,6 @@
     
     $articulos = $sentencia->fetchAll();
     $imagenes = $sentencia2->fetchAll();
-    
-    if($sentencia2->rowCount()>0 ){
-        echo "yes";
-    }else{
-        echo "no";
-    }
 
     ?>
 
@@ -112,12 +106,12 @@
                 <div class="col-md-6" >
                     <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
                         <div class="col p-4 d-flex flex-column position-static">
-                            <strong class="d-inline-block mb-3 text-success"><?php echo $fila['type'] ?></strong>
+                            <strong class="d-inline-block mb-4 text-success"><?php echo $fila['type'] ?></strong>
                             <h2 style="color:white;font-family:Playfair Display, Georgia, Times New Roman, serif" class="mb-0"><?php echo $fila["title"] ?></h2>
-                            <div class="mb-1 text-muted"><?php echo $fila["date"] ?></div>
-                                <p class="lead card-text mb-auto lead text-white d-none d-lg-block" style="line-clamp:2 ; -webkit-line-clamp:2 ; overflow:hidden ; display:-webkit-box;-webkit-box-orient:vertical;font-family:system-ui, -apple-system, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, Liberation Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji", Segoe UI Symbol, Noto Color Emoji" ><?php echo $fila["content"] ?></p>
+                            <div class=" text-muted mb-auto"><?php echo $fila["date"] ?></div>
+                                <!-- <p class="lead card-text mb-auto lead text-white d-none d-lg-block"  style="line-clamp:2 ; -webkit-line-clamp:3 ; overflow:hidden ; display:-webkit-box;-webkit-box-orient:vertical" ><?php echo $fila["content"] ?></p> -->
                                 <!-- <blockquote class="blockquote-footer">by <?php echo $fila["writer"] ?></blockquote> -->
-                            <a href="articleUser.php?title=<?php  echo $fila["title"]?>" class="stretched-link">Continue reading...</a>
+                            <a href="articleUser.php?title=<?php  echo $fila["title"]?>" class="stretched-link ; ">Continue reading</a>
                         </div>
                     <div class="col-auto d-none d-lg-block">
                         <img class="" width="300px" height="250px" src="data:image/<?php echo base64_encode($imagenes[$i]["type"]) ?>;base64,<?php echo base64_encode($imagenes[$i]["file"]) ?>" alt ="">
