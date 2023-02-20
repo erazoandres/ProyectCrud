@@ -36,12 +36,12 @@
                 </svg>
             </div>
             <div>
-                <h2 class="display-3 text-capitalize"><?php echo $name ?></h2>
-                <strong class="text-capitalize mark text-dark"><?php echo $cargo ?> </strong>
+                <h2 class="lead display-3 text-capitalize mb-0"><?php echo $name ?></h2>
+                <strong class="lead text-capitalize mark text-dark"><?php echo $cargo ?> </strong>
                 <div class="mt-2">
-                    <ul style="flex-direction:column" class="d-flex justify-content-center">
-                        <li>Articulos Creados: <?php echo $res["COUNT(*)"] ?></li>
-                        <li>Estado: <?php echo $res2["active"] ?></li>
+                    <ul style="flex-direction:column;list-style:none" class="d-flex justify-content-center">
+                        <li><kbd>Articulos Creados: <?php echo $res["COUNT(*)"] ?></kbd></li>
+                        <li><kbd>Estado: <?php echo $res2["active"] ?></kbd></li>
                     </ul>  
                 </div>
             </div>
