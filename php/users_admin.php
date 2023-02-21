@@ -91,7 +91,7 @@
       </div>
 
       <!-- CONTAINER FORM -->
-      <div class="col-auto mx-auto p-2" style="height:70vh">  
+      <div class="col-auto mx-auto p-2 mt-3" style="height:70vh;">  
         <div class="card">  
 
           <div class="card card-header bg-primary text-white user-select-none text-capitalize p-2"> <strong>REGISTRO</strong></div>
