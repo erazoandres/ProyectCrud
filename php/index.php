@@ -8,7 +8,7 @@
     $cargo = $_SESSION["cargo"];
     $name = $_SESSION["name"];
 
-    $sentencia = $conn->prepare("SELECT * FROM post WHERE type = '$cargo'  ORDER BY id DESC");
+    $sentencia = $conn->prepare("SELECT * FROM post WHERE writer = '$name' AND type = '$cargo' ORDER BY id DESC");
     $sentencia->execute();
 
     // $sentencia2 = $conn->prepare("SELECT * from files");
@@ -107,7 +107,7 @@
                     <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
                         <div class="col p-4 d-flex flex-column position-static">
                             <strong class="d-inline-block mb-4 text-success"><?php echo $fila['type'] ?></strong>
-                            <h2 style="color:white;font-family:Playfair Display, Georgia, Times New Roman, serif" class="mb-0"><?php echo $fila["title"] ?></h2>
+                            <h2 class="pt-2" style="color:white;font-family:Playfair Display, Georgia, Times New Roman, serif" class="mb-0"><?php echo $fila["title"] ?></h2>
                             <div class=" text-muted mb-auto"><?php echo $fila["date"] ?></div>
                                 <!-- <p class="lead card-text mb-auto lead text-white d-none d-lg-block"  style="line-clamp:2 ; -webkit-line-clamp:3 ; overflow:hidden ; display:-webkit-box;-webkit-box-orient:vertical" ><?php echo $fila["content"] ?></p> -->
                                 <!-- <blockquote class="blockquote-footer">by <?php echo $fila["writer"] ?></blockquote> -->

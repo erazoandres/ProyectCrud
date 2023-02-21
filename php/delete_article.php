@@ -20,7 +20,7 @@
                
                <!-- FORMULARIO -->
                
-               <form action="deleteProceso.php" class="p-4 bg-dark text-white" method="post">
+               <form action="deletePostProceso.php" class="p-4 bg-dark text-white" method="post">
 
                   <div class="mb-3">
                      <label class="text-capitalize form-label" for="">¿Cual quieres eliminar?:</label>

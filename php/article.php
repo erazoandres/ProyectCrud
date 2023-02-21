@@ -28,7 +28,6 @@
         
         <link rel="stylesheet" type="text/css" href="../icons/font/bootstrap-icons.css">
         
-
     </head>
 
     <body>
