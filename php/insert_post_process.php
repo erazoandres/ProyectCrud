@@ -62,8 +62,13 @@
                     $content = $_POST["content"];
                     $writer = $_SESSION["name"];
                     $urlVideo = $_POST["urlVideo"];
+
+                    $exp = explode("=","$urlVideo");
+                    $code = strval($exp[1]);
+                    $exp2 = explode("&","$code");
+                    $videoCode = strval($exp2[0]);
             
-                    $sentencia_post = $conn->prepare("INSERT INTO post(title,type,date,writer,content,urlVideo) VALUES('$title','$type' ,'$date','$writer', '$content','$urlVideo')");
+                    $sentencia_post = $conn->prepare("INSERT INTO post(title,type,date,writer,content,urlVideo) VALUES('$title','$type' ,'$date','$writer', '$content','$videoCode')");
                     $sentencia_post->execute();
 
                     if($sentencia_img->rowCount()>0 and $sentencia_adj->rowCount()>0 and $sentencia_post->rowCount()>0){
