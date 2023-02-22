@@ -1,6 +1,6 @@
 
 <?php
-    session_start();
+    // session_start();
     include_once 'conection.php';
 
     $id = $_POST["id"];

@@ -1,6 +1,6 @@
 <?php
 
-    session_start();
+    
     include_once "conection.php";
 
     $old_title = $_POST["old_title"];

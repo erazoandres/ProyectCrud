@@ -1,9 +1,11 @@
 <?php
-    session_start();
+    // session_start();
 
+    include "securitySession.php";
     include "header.php";
     include "footer.php";
     include "conection.php";
+
 
     $cargo = $_SESSION["cargo"];
     $name = $_SESSION["name"];

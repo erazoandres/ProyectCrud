@@ -1,5 +1,7 @@
 
 <?php
+    include_once "securitySession.php";
+    
     if(empty($_POST["name"]) || empty($_POST["email"]) || empty($_POST["pass"])){
         header('Location:../index.php?status=err');
         exit();

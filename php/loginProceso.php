@@ -1,29 +1,30 @@
 <?php
+include "securitySession.php";
 
-    session_start();
+include "conection.php";
 
-    include "conection.php";
-    
     $name = $_POST["name"];
     $email = $_POST["email"];
     $pass = $_POST["pass"];
-
+    
     $sentencia = $conn->prepare("SELECT * FROM users WHERE nombre = '$name' AND email = '$email' AND pass = '$pass'");
     $sentencia->execute();
-
+    
     $res = $sentencia->fetchAll(PDO::FETCH_ASSOC);
-
-    $_SESSION["name"] = "$name";
+    
     // $_SESSION["active"] = "active";
-    $_SESSION["cargo"]  = $res[0]["cargo"];
     
     if($sentencia->rowCount()>0){
-
         
-        header("Location:index.php?status=welcome");
+        session_name("loginUsuario"); 
+        $_SESSION["name"] = "$name";
+        $_SESSION["cargo"]  = $res[0]["cargo"];
+        $_SESSION["autentificado"]= "SI"; 
+        $_SESSION["ultimoAcceso"]= date("Y-n-j H:i:s"); 
 
-        
+        header("Location:index.php?status=welcome");        
     }else{
-        echo "No estas registrado";
+        
+        header("Location: login.php?errorUsuario=1"); 
     }
 ?>

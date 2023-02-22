@@ -1,5 +1,8 @@
-<?php session_start() ;
+<?php
 
+    // session_start() ;
+
+    include_once "securitySession.php";
     include_once 'conection.php';
 
     $sentencia = $conn->prepare("SELECT COUNT")

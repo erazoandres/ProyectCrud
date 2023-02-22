@@ -1,7 +1,8 @@
 <?php
 
     include_once "conection.php";
-    session_start();
+
+    // session_start();
     $title = $_POST["title"];
 
     if(isset($_POST["submit"])){
@@ -94,3 +95,5 @@
 
     /*$check = getimagesize($_FILES["image"]["tmp_name"]);*/
 ?>
+
+

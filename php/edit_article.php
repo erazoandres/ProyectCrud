@@ -1,4 +1,5 @@
 <?php 
+    include_once "securitySession.php";
     include_once "conection.php";
 
     $title = $_POST["title"];
