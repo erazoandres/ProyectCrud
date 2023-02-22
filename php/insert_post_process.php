@@ -61,8 +61,9 @@
                     $date = date('y-m-d');
                     $content = $_POST["content"];
                     $writer = $_SESSION["name"];
+                    $urlVideo = $_POST["urlVideo"];
             
-                    $sentencia_post = $conn->prepare("INSERT INTO post(title,type,date,writer,content) VALUES('$title','$type' ,'$date','$writer', '$content')");
+                    $sentencia_post = $conn->prepare("INSERT INTO post(title,type,date,writer,content,urlVideo) VALUES('$title','$type' ,'$date','$writer', '$content','$urlVideo')");
                     $sentencia_post->execute();
 
                     if($sentencia_img->rowCount()>0 and $sentencia_adj->rowCount()>0 and $sentencia_post->rowCount()>0){

@@ -44,8 +44,9 @@
                     </div>
 
                 </div> 
-                <div>
-                    <iframe class="px-4" width="560" height="315" src="https://www.youtube.com/embed/L_cEtHFSlmg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <div style="color:white">
+              
+                        <iframe class="px-4" width="560" height="315" src="<?php  echo $res->urlVideo ?>" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                 </div>
 
                 <div class="d-flex p-4">
@@ -67,7 +68,6 @@
                         </button>
                     </div>
                 </div>
-
         </div> 
 
             <div class="col-4 d-none d-md-block">
