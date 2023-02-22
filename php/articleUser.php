@@ -47,7 +47,7 @@
                 
 
                 <!-- API DE YOUTUBE -->
-                <div> 
+                <div class=" p-4"> 
               
                   <!-- 1. The <iframe> (and video player) will replace this <div> tag. -->
                   <div id="player"></div>
@@ -59,6 +59,8 @@
                     tag.src = "https://www.youtube.com/iframe_api";
                     var firstScriptTag = document.getElementsByTagName('script')[0];
                     firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+
                     
                     var url = '<?php echo $res->urlVideo ?>';
 
@@ -120,6 +122,7 @@
                 </div>
         </div> 
 
+            <!-- TARGETAS  -->
             <div class="col-4 d-none d-md-block">
                 <div class="p-4 text-white" style="position:sticky ; top:0">
                     <h3 class="card card-header border">About something</h3>
