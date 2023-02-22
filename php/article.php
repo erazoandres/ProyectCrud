@@ -32,7 +32,7 @@
     </head>
 
     <body>
-        <div class="d-flex container">
+        <div class="d-flex container mx-sm-0">
 
             <div class="col-lg-8 py-4">
 
@@ -133,7 +133,7 @@
 
             </div> 
 
-            <div class="col-4 d-none d-md-block">
+            <div class="col-4 d-none d-lg-block">
                 <div class=" p-4" style = "position:sticky;top:0;"  >
 
                     <div>
