@@ -8,10 +8,11 @@
     $cargo = $_SESSION["cargo"];
     $name = $_SESSION["name"];
 
+    // CUANDO CAMBIAS DE CARGO MIENTRAS ESTAN LOGUEADOS SU STATUS ACTIVO NO SE ALTERA PARA ESA SESION
+
     $sentencia = $conn->prepare("SELECT * FROM post WHERE writer = '$name' AND type = '$cargo' ORDER BY id DESC");
     $sentencia->execute();
 
-    // $sentencia2 = $conn->prepare("SELECT * from files");
     $sentencia2 = $conn->prepare("SELECT * from files WHERE writer = '$name' ORDER BY id DESC");
     $sentencia2->execute();
 
