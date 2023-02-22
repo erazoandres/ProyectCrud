@@ -16,8 +16,8 @@ include "conection.php";
     
     if($sentencia->rowCount()>0){
         
-        session_name("loginUsuario"); 
-        $_SESSION["name"] = "$name";
+        // session_name("loginUsuario"); 
+        $_SESSION["name"] = "$name";        
         $_SESSION["cargo"]  = $res[0]["cargo"];
         $_SESSION["autentificado"]= "SI"; 
         $_SESSION["ultimoAcceso"]= date("Y-n-j H:i:s"); 

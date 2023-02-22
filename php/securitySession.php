@@ -15,7 +15,7 @@ if ($_SESSION["autentificado"] != "SI") {
     $tiempo_transcurrido = (strtotime($ahora)-strtotime($fechaGuardada));
 
     //comparamos el tiempo transcurrido
-     if($tiempo_transcurrido >=5) {
+     if($tiempo_transcurrido >=120) {
      //si pasaron 10 minutos o más
       session_destroy(); // destruyo la sesión
       session_unset(); // libero todas las variables
