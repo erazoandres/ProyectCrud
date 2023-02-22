@@ -1,4 +1,4 @@
-
+hola
 <?php
     include_once "securitySession.php";
     include_once "conection.php";
