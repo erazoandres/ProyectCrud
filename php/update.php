@@ -1,9 +1,9 @@
 
 <?php
+   include_once "securitySession.php";
    include_once "conection.php";
    include_once "header.php";
    include_once "footer.php";
-   include_once "securitySession.php";
    
    $name = $_GET["status"];
    $sentencia = $conn->prepare("SELECT * FROM users WHERE nombre = '$name'");

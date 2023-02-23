@@ -10,7 +10,7 @@
         $title = $_POST["title"];
         $sentencia = $conn->prepare("DELETE FROM post WHERE title = '$title'");
         $sentencia2 = $conn->prepare("DELETE FROM files WHERE title = '$title'");
-        $sentencia3 = $conn->prepare("DELETE FROM attachment WHERE title = '$title'");
+        $sentencia3 = $conn->prepare("DELETE FROM attachment WHERE title_post = '$title'");
       
         $sentencia->execute();
         $sentencia2->execute();

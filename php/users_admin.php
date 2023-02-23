@@ -158,7 +158,7 @@
                 </div>
 
             <?php  
-              }elseif(isset($_GET["status"]) and $_GET["status"] == "del"){
+              }elseif(isset($_GET["status"]) and $_GET["status"] == "userDeleted"){
             ?>
                   <div class="alert alert-warning alert-dismissible fade show my-0" role="alert">
                     <button style="overflow:hidden" type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
