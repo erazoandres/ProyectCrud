@@ -20,6 +20,7 @@ if ($_SESSION["autentificado"] != "SI") {
         session_destroy(); // destruyo la sesión
         session_unset(); // libero todas las variables despues de haber destuido las sesion
         header("Location: login.php"); //envío al usuario a la pag. de autenticación
+    
         //sino, actualizo la fecha de la sesión
     }else {
         $_SESSION["ultimoAcceso"] = $ahora;

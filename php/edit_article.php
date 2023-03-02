@@ -39,7 +39,7 @@
 
     </head>
 
-    <body class="bg-dark">
+    <body class="bg-dark" style="height:100vh">
 
         <header class="container border-bottom d-flex">
             <div class="col-md-10 text-center p-4 mx-auto my-2 text-white ">
@@ -102,7 +102,7 @@
 
               
                      
-                        <div class="d-grid"><button type="submit" value="UPLOAD" class=" btn btn-outline-primary p-3">Postear</button></div>
+                        <div class="d-grid mt-1"><button type="submit" value="UPLOAD" class=" btn btn-outline-primary p-3">Postear</button></div>
                         <input type="hidden" name="old_title" value="<?php echo $title ?>">
                     </form>
                 </div>

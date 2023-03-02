@@ -25,6 +25,6 @@ include "conection.php";
         header("Location:index.php?status=welcome");        
     }else{
         
-        header("Location: login.php?errorUsuario=1"); 
+        header("Location: login.php?status=ErrorLogin"); 
     }
 ?>

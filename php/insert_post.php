@@ -43,7 +43,7 @@
 
     </head>
 
-    <body class="bg-dark">
+    <body class="bg-dark" style="height:100vh">
 
         <header class="container border-bottom d-flex">
         
@@ -130,7 +130,7 @@
                         <input type="hidden" name="type" value="<?php echo $_SESSION["cargo"] ?>" >
                         
                         
-                        <div class="d-grid"><button name="submit" type="submit" value="UPLOAD" class=" btn btn-outline-primary p-3">Postear</button></div>
+                        <div class="d-grid mt-1"><button name="submit" type="submit" value="UPLOAD" class=" btn btn-outline-primary p-3">Postear</button></div>
                     <!-- </form> -->
                 </div>
 
@@ -150,9 +150,9 @@
 
                         <div class="card p-2 bg-dark text-light border">
                             <div class="card-header"><h5>Adjuntos</h5></div>
-                                <div class="card-body card-text">
+                                <div class="card-body card-text py-2">
                                     <div class="input-group w-50">
-                                        <span class="input-group-text" id="basic-addon1">
+                                        <span class="input-group-text p-1" id="basic-addon1">
                                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-paperclip" viewBox="0 0 16 16">
                                                 <path d="M4.5 3a2.5 2.5 0 0 1 5 0v9a1.5 1.5 0 0 1-3 0V5a.5.5 0 0 1 1 0v7a.5.5 0 0 0 1 0V3a1.5 1.5 0 1 0-3 0v9a2.5 2.5 0 0 0 5 0V5a.5.5 0 0 1 1 0v7a3.5 3.5 0 1 1-7 0V3z"/>
                                             </svg>
@@ -162,9 +162,9 @@
                                     </div>
                                 </div>
 
-                                <div class="card-body card-text">
+                                <div class="card-body card-text py-2">
                                     <div class="input-group w-50">
-                                        <span class="input-group-text" id="basic-addon1">
+                                        <span class="input-group-text p-1" id="basic-addon1">
                                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-images" viewBox="0 0 16 16">
                                                 <path d="M4.502 9a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"/>
                                                 <path d="M14.002 13a2 2 0 0 1-2 2h-10a2 2 0 0 1-2-2V5A2 2 0 0 1 2 3a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v8a2 2 0 0 1-1.998 2zM14 2H4a1 1 0 0 0-1 1h9.002a2 2 0 0 1 2 2v7A1 1 0 0 0 15 11V3a1 1 0 0 0-1-1zM2.002 4a1 1 0 0 0-1 1v8l2.646-2.354a.5.5 0 0 1 .63-.062l2.66 1.773 3.71-3.71a.5.5 0 0 1 .577-.094l1.777 1.947V5a1 1 0 0 0-1-1h-10z"/>
@@ -175,9 +175,9 @@
                                     </div>
                                 </div>
                                 
-                                <div class="card-body card-text">
+                                <div class="card-body card-text py-2">
                                     <div class="input-group w-50">
-                                        <span class="input-group-text" id="basic-addon1">
+                                        <span class="input-group-text p-1" id="basic-addon1">
                                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-youtube" viewBox="0 0 16 16">
                                                 <path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.007 2.007 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.007 2.007 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31.4 31.4 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.007 2.007 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A99.788 99.788 0 0 1 7.858 2h.193zM6.4 5.209v4.818l4.157-2.408L6.4 5.209z"/>
                                             </svg>

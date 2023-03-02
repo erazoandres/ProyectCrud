@@ -1,4 +1,3 @@
-hola
 <?php
     include_once "securitySession.php";
     include_once "conection.php";
@@ -11,7 +10,7 @@ hola
 
     $res = $sentencia->fetch(PDO::FETCH_OBJ);
 
-    // echo $res->writer;
+  
 ?>
 
 

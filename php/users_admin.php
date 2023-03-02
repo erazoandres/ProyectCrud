@@ -16,6 +16,24 @@
   var alertList = document.querySelectorAll(".alert");
   alertList.forEach(function(alert){new bootstrap.Alert(alert)});
 </script>
+<html>
+
+
+<head>
+  <style>
+
+    #inp{
+       border-bottom:1px solid white !important ;
+       border-radius:0;
+    }
+
+
+  </style>
+</head>
+
+
+<body>
+
 
 <div class="container mt-4 bg-dark" style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif">
   <div class="row ">
@@ -103,20 +121,20 @@
 
             <div class="mb-2">
               <label class="text-capitalize form-label mb-0" for="">NOMBRE</label>
-              <input class="form-control bg-dark text-white" type="text" name="name">
+              <input class="form-control bg-dark text-white border-0"  id="inp" type="text" name="name">
             </div>
             <div class="mb-2">
               <label class="text-capitalize form-label mb-0" for="">EMAIL</label>
-              <input class="form-control bg-dark text-white" type="text" name="email">
+              <input class="form-control bg-dark text-white border-0" id="inp" type="text" name="email">
             </div>
             <div class="mb-2">
               <label class="text-capitalize form-label mb-0" for="" >PASSWORD</label>
-              <input class="form-control bg-dark text-white " type="password" name="pass">
+              <input class="form-control bg-dark text-white border-0 " id="inp" type="password" name="pass">
             </div>
             
             <div class="mb-2">
-              <label class="text-capitalize form-label mb-0" for="" >CARGO</label>
-              <select class="form-control bg-dark text-white mb-0" name="cargo" id="">
+              <label class="text-capitalize form-label mb-0"  for="" >CARGO</label>
+              <select class="form-control bg-dark text-white mb-0 border-0" id="inp" name="cargo" id="">
                 
                 <!-- CARGOS -->
                   <option value="Cargo 1">Cargo 1</option>
@@ -195,3 +213,8 @@
       </div>
   </div>
 </div>
+
+  
+</body>
+
+</html>
